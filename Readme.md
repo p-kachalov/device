@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Павел Качалов](https://up.htmlacademy.ru/htmlcss/19/user/235268).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/polina).
 
 ---
 
