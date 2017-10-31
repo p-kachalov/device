@@ -6,23 +6,64 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-logo"></div>
+      <div class="header-logo">Device</div>
       <div class="header-top">
-        <div class="search"></div>
+        <div class="search"><input type="search"></div>
         <nav class="header-user-menu">
-          <ul></ul>
+          <ul>
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="">Корзина</a></li>
+          </ul>
         </nav>
       </div>
       <div class="header-bottom">
         <nav class="header-main-menu">
-          <ul class="catalog"></ul>
-          <ul class="shipping-and-warranty"></ul>
-          <ul class="contacts"></ul>
+          <ul>
+            <li><a href="#">Каталог товаров</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="slider"></div>
+      <div class="slider">
+        <div class="product-slide">
+          <img alt="Палка для селфи">
+          <h2 class="slide-title">Делай селфи, как БенСтиллер!</h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a href="#">Подробнее</a>
+          <!--
+          <div class="slide-switcher">
+            <input type="radio" id="slide-1"
+                   name="slide-number" value="1">
+            <label for="slide-1">Палка для селфи</label>
+
+            <input type="radio" id="slide-2"
+                   name="slide-number" value="2">
+            <label for="slide-2">Фитнес браслет</label>
+
+            <input type="radio" id="slide-3"
+                   name="slide-number" value="3">
+            <label for="slide-3">Квадрокоптер</label>
+          </div>
+          -->
+          <dl class="product-properties">
+            <div class="property">
+              <dt>Длина палки</dt><dd>8,5 м</dd>
+            </div>
+            <div class="property">
+              <dt>Вес палки</dt><dd>5 кг</dd>
+            </div>
+            <div class="property">
+              <dt>Материал</dt><dd>Карбон</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
       <div class="categories"></div>
       <div class="conditions"></div>
       <div class="partners"></div>
