@@ -33,12 +33,16 @@
     <main>
 
       <div class="slider">
+
+        <input type="radio" id="slide-1" name="slide-number" value="1" checked>
+        <input type="radio" id="slide-2" name="slide-number" value="2">
+        <input type="radio" id="slide-3" name="slide-number" value="3">
+
         <ol class="slides">
           <li class="slide-item">
-            <input type="radio" id="slide-1" name="slide-number" value="1" checked>
             <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-            <h2 class="slide-title">Делай селфи, как БенСтиллер!</h2>
-            <p>Самая длинная палка для селфи доступна в нашем магазине.
+            <label for="slide-1" class="slide-title">Делай селфи, как БенСтиллер!</label>
+            <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#">Подробнее</a>
             <dl class="product-properties">
@@ -55,10 +59,9 @@
           </li>
 
           <li class="slide-item">
-            <input type="radio" id="slide-2" name="slide-number" value="2">
             <img src="img/slider-2.png" width="345" height="485" alt="Фитнес браслет">
-            <h2 class="slide-title">Худеем правильно!</h2>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+            <label for="slide-2" class="slide-title">Худеем правильно!</label>
+            <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.</p>
             <a href="#">Подробнее</a>
             <dl class="product-properties">
@@ -69,10 +72,9 @@
           </li>
 
           <li class="slide-item">
-            <input type="radio" id="slide-3" name="slide-number" value="3">
             <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+            <label for="slide-3" class="slide-title">Порхает как бабочка, жалит как пчела!</label>
+            <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен
               мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#">Подробнее</a>
             <dl class="product-properties">
@@ -84,6 +86,7 @@
               </div>
             </dl>
           </li>
+
         </ol>
       </div>
 
@@ -125,6 +128,7 @@
         <img src="img/logo-3.png" width="260" height="100" alt="GoPro">
         <img src="img/logo-4.png" width="260" height="100" alt="Vive">
       </div>
+
       <div class="about-and-contacts">
         <div class="info">
           <h2>О нас</h2>
@@ -144,6 +148,7 @@
           <a href="#">Напишите нам</a>
         </div>
       </div>
+
     </main>
     <footer class="page-footer">
       <div class="footer-top">
