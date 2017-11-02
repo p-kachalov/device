@@ -8,23 +8,49 @@
 
     <header class="header header_page-header">
       <nav class="main-navigation">
-        <p class="logo logo_header">Device</p>
-        <div class="header-top">
-          <input type="search">
-          <ul class="user-menu user-menu_header">
-            <li class="user-menu__item"><a href="#" class="user-menu__link">Войти</a></li>
-            <li class="user-menu__item"><a href="#" class="user-menu__link">Сравнить</a></li>
-            <li class="user-menu__item"><a href="#" class="user-menu__link">Корзина</a></li>
+
+        <a><p class="logo logo_header">Device</p></a>
+        <input type="search">
+        <ul class="user-menu user-menu_header">
+          <li class="user-menu__item"><a href="#" class="user-menu__link">Войти</a></li>
+          <li class="user-menu__item"><a href="#" class="user-menu__link">Сравнить</a></li>
+          <li class="user-menu__item"><a href="#" class="user-menu__link">Корзина</a></li>
+        </ul>
+        <ul class="main-menu main-menu_header">
+          <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link_extendable">Каталог товаров</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Доставка</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Гарантия</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+        </ul>
+
+        <section class="popup popup_catalog">
+          <h2 class="section-title section-title_hidden">Каталог товаров</h2>
+          <ul class="catalog-menu">
+            <li class="catalog-menu__item">
+              <a href="#" class="catalog-menu__link">Виртуальная реальность</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#" class="catalog-menu__link">Моноподы для селфи</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#" class="catalog-menu__link">Экшн-камеры</a>
+            </li>
           </ul>
-        </div>
-        <div class="header-bottom">
-          <ul class="main-menu main-menu_header">
-            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link_extendable">Каталог товаров</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link">Доставка</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link">Гарантия</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+          <ul class="catalog-menu">
+            <li class="catalog-menu__item">
+              <a href="#" class="catalog-menu__link">Фитнес-браслеты</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#" class="catalog-menu__link">Умные часы</a>
+            </li>
           </ul>
-        </div>
+          <ul class="catalog-menu">
+            <li class="catalog-menu__item">
+              <a href="#" class="catalog-menu__link">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </section>
+
       </nav>
     </header>
 
@@ -186,6 +212,32 @@
           <a href="#" class="contact__link">Напишите нам</a>
         </section>
       </div>
+
+      <section class="popup popup_map">
+        <h2 class="section-title section-title_hidden">Интерактивная карта</h2>
+        <button type="button" class="popup__close-button">X</button>
+      </section>
+
+      <section class="popup popup_feedback">
+        <h2 class="section-title section-title_hidden">Форма обратной связи</h2>
+        <form class="feedback-form">
+          <p class="feedback-form__form-group">
+            <label for="user-name" class="feedback-form__label">Ваше имя:</label>
+            <input type="text" id="user-name" class="feedback-form__input-field">
+
+            <label for="user-email" class="feedback-form__label">Ваш e-mail:</label>
+            <input type="email" id="user-email" class="feedback-form__input-field">
+          </p>
+
+          <p class="feedback-form__form-group">
+            <label for="letter-text" class="feedback-form__label">Текст письма:</label>
+            <textarea id="letter-text" class="feedback-form__text-area"></textarea>
+          </p>
+
+          <button type="button" class="feedback-form__button">Отправить</button>
+        </form>
+        <button type="button" class="popup__close-button">X</button>
+      </section>
 
     </main>
 
