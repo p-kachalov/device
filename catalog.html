@@ -124,7 +124,7 @@
 
       <p class="sort-form__form-group">
         <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending" checked class="sort-form__input-radio">
-        <label for="sort-by-ascending" class="sort-form__label">По возрастанибю</label>
+        <label for="sort-by-ascending" class="sort-form__label">По возрастанию</label>
 
         <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked class="sort-form__input-radio">
         <label for="sort-by-descending" class="sort-form__label">По убыванию</label>
@@ -132,7 +132,23 @@
     </form>
   </section>
 
-  <section class="products"></section>
+  <section class="catalog-view">
+    <ul class="products">
+      <li class="products__item"></li>
+      <li class="products__item"></li>
+      <li class="products__item"></li>
+      <li class="products__item"></li>
+    </ul>
+    <nav class="catalog-navigation">
+      <button type="button" class="catalog-navigation__previous-button">Назад</button>
+      <ul class="pagination">
+        <li class="pagination__item"><button type="button" class="pagination__page-button_active">1</button></li>
+        <li class="pagination__item"><button type="button" class="pagination__page-button">2</button></li>
+        <li class="pagination__item"><button type="button" class="pagination__page-button">3</button></li>
+      </ul>
+      <button type="button" class="catalog-navigation__next-button">Вперед</button>
+    </nav>
+  </section>
 
 
 </main>
