@@ -98,10 +98,10 @@
       <section class="filter-form__form-group">
         <h3 class="filter-form__form-group-titile">Bluetooth</h3>
 
-        <input type="radio" id="bluetooth-yes" name="bluetooth" value="yes" checked class="filter-form__input-checkbox">
+        <input type="radio" id="bluetooth-yes" name="bluetooth" value="yes" checked class="filter-form__input-radio">
         <label for="bluetooth-yes" class="filter-form__label">Есть</label>
 
-        <input type="radio" id="bluetooth-no" name="bluetooth" value="no" class="filter-form__input-checkbox">
+        <input type="radio" id="bluetooth-no" name="bluetooth" value="no" class="filter-form__input-radio">
         <label for="bluetooth-no" class="filter-form__label">Нет</label>
 
       </section>
@@ -110,7 +110,26 @@
 
   <section class="sort">
     <h2 class="control-title">Сортировка:</h2>
+    <form class="sort-form">
+      <p class="sort-form__form-group">
+        <input type="radio" id="sort-by-cost" name="sort-by" value="cost" checked class="sort-form__input-radio">
+        <label for="sort-by-cost" class="sort-form__label">По цене</label>
 
+        <input type="radio" id="sort-by-type" name="sort-by" value="type" checked class="sort-form__input-radio">
+        <label for="sort-by-type" class="sort-form__label">По типу</label>
+
+        <input type="radio" id="sort-by-popularity" name="sort-by" value="popularity" checked class="sort-form__input-radio">
+        <label for="sort-by-popularity" class="sort-form__label">По популярности</label>
+      </p>
+
+      <p class="sort-form__form-group">
+        <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending" checked class="sort-form__input-radio">
+        <label for="sort-by-ascending" class="sort-form__label">По возрастанибю</label>
+
+        <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked class="sort-form__input-radio">
+        <label for="sort-by-descending" class="sort-form__label">По убыванию</label>
+      </p>
+    </form>
   </section>
 
   <section class="products"></section>
