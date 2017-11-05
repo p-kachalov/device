@@ -6,24 +6,27 @@
   </head>
   <body>
 
-    <header class="header header_page-header">
+    <header class="page-header">
       <nav class="main-navigation">
 
-        <a><p class="logo logo_header">Device</p></a>
-        <input type="search" class="search-field">
-        <ul class="user-menu user-menu_header">
+        <a class="logo logo_header">Device</a>
+        <div class="search">
+          <label for="search-field" class="search__label_hidden">Поиск</label>
+          <input id="search-field" type="search" placeholder="Поиск по сайту" class="search__input-field">
+        </div>
+        <ul class="user-menu page-header__user-menu">
           <li class="user-menu__item"><a href="#" class="user-menu__link">Войти</a></li>
           <li class="user-menu__item"><a href="#" class="user-menu__link">Сравнить</a></li>
           <li class="user-menu__item"><a href="#" class="user-menu__link">Корзина</a></li>
         </ul>
-        <ul class="main-menu main-menu_header">
+        <ul class="main-menu page-header__main-menu">
           <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link_extendable">Каталог товаров</a></li>
           <li class="main-menu__item"><a href="#" class="main-menu__link">Доставка</a></li>
           <li class="main-menu__item"><a href="#" class="main-menu__link">Гарантия</a></li>
           <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
         </ul>
 
-        <section class="popup popup_catalog">
+        <section class="submenu submenu_catalog">
           <h2 class="section-title section-title_hidden">Каталог товаров</h2>
           <ul class="catalog-menu">
             <li class="catalog-menu__item">
@@ -35,16 +38,12 @@
             <li class="catalog-menu__item">
               <a href="#" class="catalog-menu__link">Экшн-камеры</a>
             </li>
-          </ul>
-          <ul class="catalog-menu">
             <li class="catalog-menu__item">
               <a href="#" class="catalog-menu__link">Фитнес-браслеты</a>
             </li>
             <li class="catalog-menu__item">
               <a href="#" class="catalog-menu__link">Умные часы</a>
             </li>
-          </ul>
-          <ul class="catalog-menu">
             <li class="catalog-menu__item">
               <a href="#" class="catalog-menu__link">Квадрокоптеры</a>
             </li>
@@ -241,25 +240,25 @@
 
     </main>
 
-    <footer class="footer footer_page-footer">
-      <div class="footer-top">
+    <footer class="page-footer">
+      <div class="footer__top">
         <p class="logo logo_footer">Device</p>
-        <ul class="user-menu user-menu_footer">
+        <ul class="user-menu page-footer__user-menu">
           <li class="user-menu__item"><a href="#" class="user-menu__link">Войти</a></li>
           <li class="user-menu__item"><a href="#" class="user-menu__link">Сравнить</a></li>
           <li class="user-menu__item"><a href="#" class="user-menu__link">Корзина</a></li>
         </ul>
       </div>
-      <div class="footer-middle">
+      <div class="footer__middle">
         <p class="address">г. Москва, ул. Строителей, 15</p>
         <p class="phone">Тел.: +7 (495) 495-95-95</p>
-        <ul class="main-menu main-menu_footer">
-          <li class="main-menu__item"><a href="#" class="main-menu__link">>Доставка</a></li>
-          <li class="main-menu__item"><a href="#" class="main-menu__link">>Гарантия</a></li>
-          <li class="main-menu__item"><a href="#" class="main-menu__link">>Контакты</a></li>
+        <ul class="main-menu page-footer__main-menu">
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Доставка</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Гарантия</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
         </ul>
       </div>
-      <div class="footer-bottom">
+      <div class="footer__bottom">
         <ul class="social">
           <li class="social__item"><a href="#" class="social__link social__link_facebook">Facebook</a></li>
           <li class="social__item"><a href="#" class="social__link social__link_instagram">Instagram</a></li>
