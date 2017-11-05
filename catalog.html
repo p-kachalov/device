@@ -63,7 +63,7 @@
     <li class="breadcrumbs__item"><a class="breadcrumbs__link">Моноподы для селфи</a></li>
   </ul>
 
-  <section class="filters">
+  <aside class="filters">
     <h2 class="control-title">Фильтр:</h2>
     <form class="filters-form">
       <section class="filters-form__form-group">
@@ -108,72 +108,74 @@
 
       <button class="filters-form__apply-button">Показать</button>
     </form>
-  </section>
+  </aside>
 
-  <section class="sort">
-    <h2 class="control-title">Сортировка:</h2>
-    <form class="sort-form">
-      <p class="sort-form__form-group">
-        <input type="radio" id="sort-by-cost" name="sort-by" value="cost" checked class="sort-form__input-radio">
-        <label for="sort-by-cost" class="sort-form__label">По цене</label>
+  <div class="sort-and-catalog">
+    <section class="sort">
+      <h2 class="control-title">Сортировка:</h2>
+      <form class="sort-form">
+        <p class="sort-form__form-group">
+          <input type="radio" id="sort-by-cost" name="sort-by" value="cost" checked class="sort-form__input-radio">
+          <label for="sort-by-cost" class="sort-form__label">По цене</label>
 
-        <input type="radio" id="sort-by-type" name="sort-by" value="type" checked class="sort-form__input-radio">
-        <label for="sort-by-type" class="sort-form__label">По типу</label>
+          <input type="radio" id="sort-by-type" name="sort-by" value="type" checked class="sort-form__input-radio">
+          <label for="sort-by-type" class="sort-form__label">По типу</label>
 
-        <input type="radio" id="sort-by-popularity" name="sort-by" value="popularity" checked class="sort-form__input-radio">
-        <label for="sort-by-popularity" class="sort-form__label">По популярности</label>
-      </p>
+          <input type="radio" id="sort-by-popularity" name="sort-by" value="popularity" checked class="sort-form__input-radio">
+          <label for="sort-by-popularity" class="sort-form__label">По популярности</label>
+        </p>
 
-      <p class="sort-form__form-group">
-        <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending" checked class="sort-form__input-radio">
-        <label for="sort-by-ascending" class="sort-form__label">По возрастанию</label>
+        <p class="sort-form__form-group">
+          <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending" checked class="sort-form__input-radio">
+          <label for="sort-by-ascending" class="sort-form__label">По возрастанию</label>
 
-        <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked class="sort-form__input-radio">
-        <label for="sort-by-descending" class="sort-form__label">По убыванию</label>
-      </p>
-    </form>
-  </section>
+          <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked class="sort-form__input-radio">
+          <label for="sort-by-descending" class="sort-form__label">По убыванию</label>
+        </p>
+      </form>
+    </section>
 
-  <section class="catalog-view">
-    <ul class="products">
-      <li class="products__item">
+    <section class="catalog-view">
+
+      <ul class="products">
+        <li class="products__item">
           <img src="img/item-1.jpg" width="360" height="380" class="products__image"
                alt="Обычная селфи-палка.">
           <h3 class="products__title">Любительская селфи-палка</h3>
           <p class="products__cost">500 руб.</p>
-      </li>
-      <li class="products__item">
+        </li>
+        <li class="products__item">
           <h3 class="products__title">Профессиональная селфи-палка</h3>
           <img src="img/item-2.jpg" width="360" height="380" class="products__image"
                alt="Селфи-палка с множество регулировок.">
           <p class="products__cost">1 500 руб.</p>
-      </li>
-      <li class="products__item">
+        </li>
+        <li class="products__item">
           <h3 class="products__title">Непотопляемая селфи-палка</h3>
           <img src="img/item-3.jpg" width="360" height="380" class="products__image"
                alt="Резиновая селфи палка.">
           <p class="products__cost">2 500 руб.</p>
-      </li>
-      <li class="products__item">
+        </li>
+        <li class="products__item">
           <h3 class="products__title">Селфи-палка «Следуй за мной»</h3>
           <img src="img/item-4.jpg" width="360" height="380" class="products__image"
                alt="Селфи-палка выполненная в виде человеческой руки.">
           <p class="products__cost">4 900 руб.</p>
-      </li>
-    </ul>
-
-    <nav class="catalog-navigation">
-      <a href="#" class="catalog-navigation__previous-button">Назад</a>
-      <ul class="pagination">
-        <li class="pagination__item"><a href="#" class="pagination__page-button active">1</a></li>
-        <li class="pagination__item"><a href="#" class="pagination__page-button">2</a></li>
-        <li class="pagination__item"><a href="#" class="pagination__page-button">3</a></li>
+        </li>
       </ul>
-      <a href="#" class="catalog-navigation__next-button">Вперед</a>
-    </nav>
 
-  </section>
+      <nav class="catalog-navigation">
+        <a href="#" class="catalog-navigation__previous-button">Назад</a>
+        <ul class="pagination">
+          <li class="pagination__item"><a href="#" class="pagination__page-button active">1</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__page-button">2</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__page-button">3</a></li>
+        </ul>
+        <a href="#" class="catalog-navigation__next-button">Вперед</a>
+      </nav>
 
+    </section>
+  </div>
 
 </main>
 
