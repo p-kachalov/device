@@ -68,13 +68,13 @@
     <form class="filters-form">
       <fieldset class="filters-form__form-group">
         <legend class="filters-form__form-group-title">Стоимость</legend>
-        <input type="range" min="0" max="10000" step="100" value="0"
-               id="cost-from" name="cost-from" class="filters-form__input-range">
-        <label for="cost-from" class="filters-form__label">От</label>
-
-        <input type="range" min="0" max="10000" step="100" value="5000"
-               id="cost-to" name="cost-to" class="filters-form__input-range">
-        <label for="cost-to" class="filters-form__label_hidden">До</label>
+        <div class="cost-range">
+          От
+          <div class="cost-range__start-point"></div>
+          <div class="cost-range__value-line"></div>
+          <div class="cost-range__end-point"></div>
+          До
+        </div>
       </fieldset>
 
       <fieldset class="filters-form__form-group">
