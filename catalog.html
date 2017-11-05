@@ -66,8 +66,8 @@
   <aside class="filters">
     <h2 class="control-title">Фильтр:</h2>
     <form class="filters-form">
-      <section class="filters-form__form-group">
-        <h3 class="filters-form__form-group-titile">Стоимость</h3>
+      <fieldset class="filters-form__form-group">
+        <legend class="filters-form__form-group-title">Стоимость</legend>
         <input type="range" min="0" max="10000" step="100" value="0"
                id="cost-from" name="cost-from" class="filters-form__input-range">
         <label for="cost-from" class="filters-form__label">От</label>
@@ -75,10 +75,10 @@
         <input type="range" min="0" max="10000" step="100" value="5000"
                id="cost-to" name="cost-to" class="filters-form__input-range">
         <label for="cost-to" class="filters-form__label_hidden">До</label>
-      </section>
+      </fieldset>
 
-      <section class="filters-form__form-group">
-        <h3 class="filters-form__form-group-titile">Цвет</h3>
+      <fieldset class="filters-form__form-group">
+        <legend class="filters-form__form-group-title">Цвет</legend>
         <input type="checkbox" id="black" name="black" checked class="filters-form__input-checkbox">
         <label for="black" class="filters-form__label">Чёрный</label>
 
@@ -93,10 +93,10 @@
 
         <input type="checkbox" id="pink" name="pink" class="filters-form__input-checkbox">
         <label for="pink" class="filters-form__label">Розовый</label>
-      </section>
+      </fieldset>
 
-      <section class="filters-form__form-group">
-        <h3 class="filters-form__form-group-titile">Bluetooth</h3>
+      <fieldset class="filters-form__form-group">
+        <legend class="filters-form__form-group-title">Bluetooth</legend>
 
         <input type="radio" id="bluetooth-yes" name="bluetooth" value="yes" checked class="filters-form__input-radio">
         <label for="bluetooth-yes" class="filters-form__label">Есть</label>
@@ -104,7 +104,7 @@
         <input type="radio" id="bluetooth-no" name="bluetooth" value="no" class="filters-form__input-radio">
         <label for="bluetooth-no" class="filters-form__label">Нет</label>
 
-      </section>
+      </fieldset>
 
       <button class="filters-form__apply-button">Показать</button>
     </form>
@@ -114,7 +114,8 @@
     <section class="sort">
       <h2 class="control-title">Сортировка:</h2>
       <form class="sort-form">
-        <p class="sort-form__form-group">
+        <fieldset class="sort-form__form-group">
+          <legend class="sort-form__form-group-title">Поле сортировки</legend>
           <input type="radio" id="sort-by-cost" name="sort-by" value="cost" checked class="sort-form__input-radio">
           <label for="sort-by-cost" class="sort-form__label">По цене</label>
 
@@ -123,15 +124,16 @@
 
           <input type="radio" id="sort-by-popularity" name="sort-by" value="popularity" checked class="sort-form__input-radio">
           <label for="sort-by-popularity" class="sort-form__label">По популярности</label>
-        </p>
+        </fieldset>
 
-        <p class="sort-form__form-group">
+        <fieldset class="sort-form__form-group">
+          <legend class="sort-form__form-group-title">Направление сортировки</legend>
           <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending" checked class="sort-form__input-radio">
           <label for="sort-by-ascending" class="sort-form__label">По возрастанию</label>
 
           <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked class="sort-form__input-radio">
           <label for="sort-by-descending" class="sort-form__label">По убыванию</label>
-        </p>
+        </fieldset>
       </form>
     </section>
 
