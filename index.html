@@ -11,7 +11,7 @@
 
         <a class="logo logo_header">Device</a>
         <div class="search">
-          <label for="search-field" class="search__label_hidden">Поиск</label>
+          <label for="search-field" class="search__label visually-hidden">Поиск</label>
           <input id="search-field" type="search" placeholder="Поиск по сайту" class="search__input-field">
         </div>
         <ul class="user-menu page-header__user-menu">
@@ -20,14 +20,36 @@
           <li class="user-menu__item"><a href="#" class="user-menu__link">Корзина</a></li>
         </ul>
         <ul class="main-menu page-header__main-menu">
-          <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link_extendable">Каталог товаров</a></li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link main-menu__link_extendable">Каталог товаров</a>
+            <ul class="catalog-submenu">
+              <li class="catalog-submenu__item">
+                <a href="#" class="catalog-submenu__link">Виртуальная реальность</a>
+              </li>
+              <li class="catalog-submenu__item">
+                <a href="#" class="catalog-submenu__link">Моноподы для селфи</a>
+              </li>
+              <li class="catalog-submenu__item">
+                <a href="#" class="catalog-submenu__link">Экшн-камеры</a>
+              </li>
+              <li class="catalog-submenu__item">
+                <a href="#" class="catalog-submenu__link">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog-submenu__item">
+                <a href="#" class="catalog-submenu__link">Умные часы</a>
+              </li>
+              <li class="catalog-submenu__item">
+                <a href="#" class="catalog-submenu__link">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
           <li class="main-menu__item"><a href="#" class="main-menu__link">Доставка</a></li>
           <li class="main-menu__item"><a href="#" class="main-menu__link">Гарантия</a></li>
           <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
         </ul>
 
         <section class="submenu submenu_catalog">
-          <h2 class="section-title section-title_hidden">Каталог товаров</h2>
+          <h2 class="section-title visually-hidden">Каталог товаров</h2>
           <ul class="catalog-menu">
             <li class="catalog-menu__item">
               <a href="#" class="catalog-menu__link">Виртуальная реальность</a>
@@ -55,20 +77,20 @@
 
     <main class="main-content main-content_front">
 
-      <h1 class="main-title main-title_hidden">Магазин Девайс</h1>
+      <h1 class="main-title visually-hidden">Магазин Девайс</h1>
 
       <section class="slider">
 
-        <h2 class="section-title section-title_hidden">Популярные товары</h2>
+        <h2 class="section-title visually-hidden">Популярные товары</h2>
 
-        <input type="radio" id="slide-1" name="slide-number" value="1" checked>
-        <label for="slide-1">Палка для селфи</label>
+        <input type="radio" id="slider-slide-1" name="slider-slide-number" value="1" checked>
+        <label for="slider-slide-1">Палка для селфи</label>
 
-        <input type="radio" id="slide-2" name="slide-number" value="2">
-        <label for="slide-2">Фитнес-браслет</label>
+        <input type="radio" id="slider-slide-2" name="slider-slide-number" value="2">
+        <label for="slider-slide-2">Фитнес-браслет</label>
 
-        <input type="radio" id="slide-3" name="slide-number" value="3">
-        <label for="slide-3">Квадрокоптер</label>
+        <input type="radio" id="slider-slide-3" name="slider-slide-number" value="3">
+        <label for="slider-slide-3">Квадрокоптер</label>
 
         <ol class="popular-products">
           <li class="popular-products__item">
@@ -121,7 +143,7 @@
       </section>
 
       <section class="popular-categories">
-        <h2 class="section-title section-title_hidden">Популярные категории</h2>
+        <h2 class="section-title visually-hidden">Популярные категории</h2>
         <ul class="categories">
           <li class="categories__item"><a href="#" class="categories__link">
             Виртуальная реальность
@@ -145,12 +167,18 @@
       </section>
 
       <section class="services">
-        <h2 class="section-title section-title_hidden">Услуги</h2>
-        <nav class="services__nav">
-          <button type="button" class="services__nav-button">Доставка</button>
-          <button type="button" class="services__nav-button">Гарантия</button>
-          <button type="button" class="services__nav-button">Кредит</button>
-        </nav>
+        <h2 class="section-title visually-hidden">Услуги</h2>
+        <ul class="services__services-navigation">
+          <li class="services__navigation-item">
+            <button type="button" class="services__navigation-button">Доставка</button>
+          </li>
+          <li class="services__navigation-item">
+            <button type="button" class="services__navigation-button">Гарантия</button>
+          </li>
+          <li class="services__navigation-item">
+            <button type="button" class="services__navigation-button">Кредит</button>
+          </li>
+        </ul>
         <section class="services__item">
           <h3 class="subsection-title">Доставка</h3>
           <p class="subsection-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -166,7 +194,7 @@
       </section>
 
       <section class="makers">
-        <h2 class="section-title section-title_hidden">Производители</h2>
+        <h2 class="section-title visually-hidden">Производители</h2>
         <ul class="makers-list">
           <li class="makers-list__item">
             <a href="#" class="makers-list__link">
@@ -207,39 +235,38 @@
         <section class="contact">
           <h2 class="section-title">Контакты</h2>
           <p class="section-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-<<<<<<< HEAD
           <div class="map">
             <img src="img/map.jpg" width="560" height="222" class="map__image" alt="Улица Строителей, 15">
           </div>
-=======
-          <div class="map"></div>
->>>>>>> base/master
           <a href="#" class="contact__link">Напишите нам</a>
         </section>
       </div>
 
       <section class="popup popup_map">
-        <h2 class="section-title section-title_hidden">Интерактивная карта</h2>
+        <h2 class="section-title visually-hidden">Интерактивная карта</h2>
         <button type="button" class="popup__close-button">X</button>
       </section>
 
       <section class="popup popup_feedback">
-        <h2 class="section-title section-title_hidden">Форма обратной связи</h2>
+        <h2 class="section-title visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form">
           <p class="feedback-form__form-group">
-            <label for="user-name" class="feedback-form__label">Ваше имя:</label>
-            <input type="text" id="user-name" name="user-name" class="feedback-form__input-field">
+            <label for="feedback-form-user-name" class="feedback-form__label">Ваше имя:</label>
+            <input type="text" id="feedback-form-user-name" name="feedback-form-user-name"
+                   class="feedback-form__input-field">
 
-            <label for="user-email" class="feedback-form__label">Ваш e-mail:</label>
-            <input type="email" id="user-email" name="user-email" class="feedback-form__input-field">
+            <label for="feedback-form-user-email" class="feedback-form__label">Ваш e-mail:</label>
+            <input type="email" id="feedback-form-user-email" name="feedback-form-user-email"
+                   class="feedback-form__input-field">
           </p>
 
           <p class="feedback-form__form-group">
-            <label for="letter-text" class="feedback-form__label">Текст письма:</label>
-            <textarea id="letter-text" name="letter-text" class="feedback-form__text-area"></textarea>
+            <label for="feedback-form-letter-text" class="feedback-form__label">Текст письма:</label>
+            <textarea id="feedback-form-letter-text" name="feedback-form-letter-text"
+                      class="feedback-form__text-area"></textarea>
           </p>
 
-          <button type="button" class="feedback-form__button">Отправить</button>
+          <button type="submit" class="feedback-form__button">Отправить</button>
         </form>
         <button type="button" class="popup__close-button">X</button>
       </section>

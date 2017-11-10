@@ -11,7 +11,7 @@
 
     <a href="#" class="logo logo_header">Device</a>
     <div class="search">
-      <label for="search-field" class="search__label_hiden">Поиск</label>
+      <label for="search-field" class="search__label visually-hidden">Поиск</label>
       <input id="search-field" type="search" placeholder="Поиск по сайту" class="search__input-field">
     </div>
     <ul class="user-menu page-header__user-menu">
@@ -75,36 +75,43 @@
         </div>
       </fieldset>
 
-      <fieldset class="filters-form__form-group">
+      <fieldset class="color-filter filters-form__form-group">
         <legend class="filters-form__form-group-title">Цвет</legend>
-        <input type="checkbox" id="black" name="black" checked class="filters-form__input-checkbox">
-        <label for="black" class="filters-form__label">Чёрный</label>
+        <input type="checkbox" id="color-filter-black" name="color-filter-black" checked
+               class="filters-form__input-checkbox">
+        <label for="color-filter-black" class="filters-form__label">Чёрный</label>
 
-        <input type="checkbox" id="white" name="white" class="filters-form__input-checkbox">
-        <label for="white" class="filters-form__label">Белый</label>
+        <input type="checkbox" id="color-filter-white" name="color-filter-white"
+               class="filters-form__input-checkbox">
+        <label for="color-filter-white" class="filters-form__label">Белый</label>
 
-        <input type="checkbox" id="blue" name="blue" checked class="filters-form__input-checkbox">
-        <label for="blue" class="filters-form__label">Синий</label>
+        <input type="checkbox" id="color-filter-blue" name="color-filter-blue" checked
+               class="filters-form__input-checkbox">
+        <label for="color-filter-blue" class="filters-form__label">Синий</label>
 
-        <input type="checkbox" id="red" name="red" checked class="filters-form__input-checkbox">
-        <label for="red" class="filters-form__label">Красный</label>
+        <input type="checkbox" id="color-filter-red" name="color-filter-red" checked
+               class="filters-form__input-checkbox">
+        <label for="color-filter-red" class="filters-form__label">Красный</label>
 
-        <input type="checkbox" id="pink" name="pink" class="filters-form__input-checkbox">
-        <label for="pink" class="filters-form__label">Розовый</label>
+        <input type="checkbox" id="color-filter-pink" name="color-filter-pink"
+               class="filters-form__input-checkbox">
+        <label for="color-filter-pink" class="filters-form__label">Розовый</label>
       </fieldset>
 
-      <fieldset class="filters-form__form-group">
+      <fieldset class="bluetooth-filter filters-form__form-group">
         <legend class="filters-form__form-group-title">Bluetooth</legend>
 
-        <input type="radio" id="bluetooth-yes" name="bluetooth" value="yes" checked class="filters-form__input-radio">
-        <label for="bluetooth-yes" class="filters-form__label">Есть</label>
+        <input type="radio" id="bluetooth-filter-yes" name="bluetooth-filter" value="yes" checked
+               class="filters-form__input-radio">
+        <label for="bluetooth-filter-yes" class="filters-form__label">Есть</label>
 
-        <input type="radio" id="bluetooth-no" name="bluetooth" value="no" class="filters-form__input-radio">
-        <label for="bluetooth-no" class="filters-form__label">Нет</label>
+        <input type="radio" id="bluetooth-filter-no" name="bluetooth-filter" value="no"
+               class="filters-form__input-radio">
+        <label for="bluetooth-filter-no" class="filters-form__label">Нет</label>
 
       </fieldset>
 
-      <button class="filters-form__apply-button">Показать</button>
+      <button type="submit" class="filters-form__apply-button">Показать</button>
     </form>
   </aside>
 
@@ -137,7 +144,7 @@
 
     <section class="catalog-view">
 
-      <h2 class="section-title section-title_hidden">Каталок товаров</h2>
+      <h2 class="section-title visually-hidden">Каталок товаров</h2>
 
       <ul class="products catalog-view__products">
         <li class="products__item">
@@ -182,15 +189,16 @@
         </li>
       </ul>
 
-      <nav class="catalog-view__navigation">
-        <a href="#" class="catalog-navigation__previous-button">Назад</a>
-        <ul class="pagination">
-          <li class="pagination__item"><a href="#" class="pagination__page-button active">1</a></li>
-          <li class="pagination__item"><a href="#" class="pagination__page-button">2</a></li>
-          <li class="pagination__item"><a href="#" class="pagination__page-button">3</a></li>
+      <section class="pagination catalog-view__pagination">
+        <h3 class="section-title visually-hidden">Навигация по страницам каталога</h3>
+        <a href="#" class="pagination__previous-button">Назад</a>
+        <ul class="pagination__page-list">
+          <li class="pagination__page-item"><a href="#" class="pagination__page-button active">1</a></li>
+          <li class="pagination__page-item"><a href="#" class="pagination__page-button">2</a></li>
+          <li class="pagination__page-item"><a href="#" class="pagination__page-button">3</a></li>
         </ul>
-        <a href="#" class="catalog-navigation__next-button">Вперед</a>
-      </nav>
+        <a href="#" class="pagination__next-button">Вперед</a>
+      </section>
 
     </section>
   </div>
