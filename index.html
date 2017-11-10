@@ -61,14 +61,14 @@
 
         <h2 class="section-title section-title_hidden">Популярные товары</h2>
 
-        <input type="radio" id="slide-1" name="slide-number" value="1" checked>
-        <label for="slide-1">Палка для селфи</label>
+        <input type="radio" id="slider-slide-1" name="slider-slide-number" value="1" checked>
+        <label for="slider-slide-1">Палка для селфи</label>
 
-        <input type="radio" id="slide-2" name="slide-number" value="2">
-        <label for="slide-2">Фитнес-браслет</label>
+        <input type="radio" id="slider-slide-2" name="slider-slide-number" value="2">
+        <label for="slider-slide-2">Фитнес-браслет</label>
 
-        <input type="radio" id="slide-3" name="slide-number" value="3">
-        <label for="slide-3">Квадрокоптер</label>
+        <input type="radio" id="slider-slide-3" name="slider-slide-number" value="3">
+        <label for="slider-slide-3">Квадрокоптер</label>
 
         <ol class="popular-products">
           <li class="popular-products__item">
@@ -229,16 +229,19 @@
         <h2 class="section-title section-title_hidden">Форма обратной связи</h2>
         <form class="feedback-form">
           <p class="feedback-form__form-group">
-            <label for="user-name" class="feedback-form__label">Ваше имя:</label>
-            <input type="text" id="user-name" name="user-name" class="feedback-form__input-field">
+            <label for="feedback-form-user-name" class="feedback-form__label">Ваше имя:</label>
+            <input type="text" id="feedback-form-user-name" name="feedback-form-user-name"
+                   class="feedback-form__input-field">
 
-            <label for="user-email" class="feedback-form__label">Ваш e-mail:</label>
-            <input type="email" id="user-email" name="user-email" class="feedback-form__input-field">
+            <label for="feedback-form-user-email" class="feedback-form__label">Ваш e-mail:</label>
+            <input type="email" id="feedback-form-user-email" name="feedback-form-user-email"
+                   class="feedback-form__input-field">
           </p>
 
           <p class="feedback-form__form-group">
-            <label for="letter-text" class="feedback-form__label">Текст письма:</label>
-            <textarea id="letter-text" name="letter-text" class="feedback-form__text-area"></textarea>
+            <label for="feedback-form-letter-text" class="feedback-form__label">Текст письма:</label>
+            <textarea id="feedback-form-letter-text" name="feedback-form-letter-text"
+                      class="feedback-form__text-area"></textarea>
           </p>
 
           <button type="button" class="feedback-form__button">Отправить</button>
