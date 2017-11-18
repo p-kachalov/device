@@ -208,7 +208,7 @@ body {
   background-color: #e5e5e5;
 }
 
-.services-title {
+.section-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   font-size: 47px;
@@ -216,7 +216,7 @@ body {
   color: #000000;
 }
 
-.services-text {
+.section-text {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 15px;
