@@ -245,3 +245,16 @@ body {
   color: #ffffff;
 
 }
+
+.social {
+  list-style: none;
+}
+
+.social__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
