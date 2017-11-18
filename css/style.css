@@ -48,6 +48,16 @@ body {
   background-color: white;
 }
 
+/*
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+*/
+
 .page-header {
   color: #000000;
   background-color: #f7e296;
@@ -133,5 +143,49 @@ body {
   font-size: 15px;
   line-height: 36px;
   text-decoration: none;
+  color: #000000;
+}
+
+.popular-products {
+  list-style: none;
+}
+
+.popular-products__slide-number {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 180px;
+  line-height: 180px;
+  color: #ffffff;
+}
+
+.popular-products__lead {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  line-height: normal;
+  color: #000000;
+}
+
+.popular-products__description {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+}
+
+.popular-products__property-name {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464646;
+}
+
+.popular-products__property-value {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: normal;
   color: #000000;
 }
