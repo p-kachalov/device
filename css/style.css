@@ -203,3 +203,23 @@ body {
   color: #000000;
 }
 
+.services {
+  color: #464646;
+  background-color: #e5e5e5;
+}
+
+.services-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  line-height: normal;
+  color: #000000;
+}
+
+.services-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+}
