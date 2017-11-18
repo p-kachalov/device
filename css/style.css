@@ -38,3 +38,100 @@
   font-weight: bold;
   font-style: normal;
 }
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #333333;
+  background-color: white;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #f7e296;
+}
+
+.page-footer {
+  color: #ffffff;
+  background-color: #464646;
+}
+
+.main-content {
+  color: #464646;
+  background-color: #ffffff;
+}
+
+.logo {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo_header {
+  color: black;
+}
+
+.logo_footer {
+  color: #ffc600;
+}
+
+.search {}
+
+.user-menu {
+  list-style: none;
+}
+
+.user-menu__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.page-header__user-menu .user-menu__link {
+  color: #000000;
+}
+
+.page-footer__user-menu .user-menu__link {
+  color: #ffffff;
+}
+
+.main-menu {
+  list-style: none;
+}
+
+.main-menu__link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.page-header__main-menu .main-menu__link {
+  color: #000000;
+}
+
+.page-footer__main-menu .main-menu__link {
+  color: #ffffff;
+}
+
+.catalog-submenu {
+  list-style: none;
+}
+
+.catalog-submenu__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #000000;
+}
