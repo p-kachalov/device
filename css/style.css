@@ -235,3 +235,13 @@ body {
   line-height: 40px;
   color: #000000;
 }
+
+.address,
+.phone {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+
+}
