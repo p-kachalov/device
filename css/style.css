@@ -258,3 +258,11 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
+.feedback-form__label {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
