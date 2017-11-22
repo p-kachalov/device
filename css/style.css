@@ -299,3 +299,27 @@ body {
   color: #000000;
   letter-spacing: 0em;
 }
+
+.main-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 47px;
+  line-height: normal;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.breadcrumbs {
+  list-style: none;
+  opacity: 0.3;
+}
+
+.breadcrumbs__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
