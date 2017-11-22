@@ -150,6 +150,9 @@ body {
   letter-spacing: 0.01em;
 }
 
+
+/* front page */
+
 .popular-products {
   list-style: none;
 }
@@ -300,6 +303,9 @@ body {
   letter-spacing: 0em;
 }
 
+
+/* inner page */
+
 .main-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
@@ -322,4 +328,37 @@ body {
   text-decoration: none;
   color: #000000;
   letter-spacing: 0.01em;
+}
+
+.filters {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.control-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  letter-spacing: 0.2em;
+}
+
+.filters-form__form-group {
+  border: none;
+  border-top: 3px solid black;
+}
+
+.filters-form__form-group-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.color-filter__color-list {
+  list-style: none;
 }
