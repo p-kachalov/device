@@ -332,7 +332,7 @@ body {
 
 .filters {
   color: #000000;
-  background-color: #eeeeee;
+  background-color: #efefef;
 }
 
 .control-title {
@@ -361,4 +361,27 @@ body {
 
 .color-filter__color-list {
   list-style: none;
+}
+
+.sort {
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sort-form__form-group {
+  border: none;
+}
+
+.sort-form__label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  letter-spacing: 0em;
+  opacity: 0.3;
+}
+
+.sort-form__input-radio:checked + .sort-form__label {
+  opacity: 1;
 }
