@@ -77,7 +77,6 @@ body {
 .logo {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 48px;
-  font-weight: normal;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.01em;
@@ -99,7 +98,6 @@ body {
 
 .user-menu__link {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 36px;
   text-decoration: none;
@@ -120,7 +118,6 @@ body {
 
 .main-menu__link {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: normal;
   text-decoration: none;
@@ -142,7 +139,6 @@ body {
 
 .catalog-submenu__link {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 36px;
   text-decoration: none;
@@ -159,7 +155,6 @@ body {
 
 .popular-products__slide-number {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 180px;
   line-height: 180px;
   color: #ffffff;
@@ -168,7 +163,6 @@ body {
 
 .popular-products__lead {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 47px;
   line-height: normal;
   color: #000000;
@@ -177,7 +171,6 @@ body {
 
 .popular-products__description {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -186,7 +179,6 @@ body {
 
 .popular-products__property-name {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 13px;
   line-height: 20px;
   color: #464646;
@@ -195,7 +187,6 @@ body {
 
 .popular-products__property-value {
   font-family: "Gilroy Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 36px;
   line-height: normal;
   color: #000000;
@@ -208,7 +199,6 @@ body {
 
 .categories__link {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: normal;
   text-decoration: none;
@@ -223,7 +213,6 @@ body {
 
 .services__title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 47px;
   line-height: normal;
   color: #000000;
@@ -232,7 +221,6 @@ body {
 
 .services__text {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -241,7 +229,6 @@ body {
 
 .section-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 47px;
   line-height: normal;
   color: #000000;
@@ -250,7 +237,6 @@ body {
 
 .section-text {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   color: #464646;
@@ -263,7 +249,6 @@ body {
 
 .delivery-methods__item {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -273,7 +258,6 @@ body {
 .address,
 .phone {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   color: #ffffff;
@@ -287,7 +271,6 @@ body {
 
 .social__link {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   text-decoration: none;
@@ -296,7 +279,6 @@ body {
 
 .feedback-form__label {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
@@ -308,7 +290,6 @@ body {
 
 .main-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 47px;
   line-height: normal;
   color: #000000;
@@ -322,7 +303,6 @@ body {
 
 .breadcrumbs__link {
   font-family: "Open Sans Light", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 14px;
   line-height: 36px;
   text-decoration: none;
@@ -337,7 +317,6 @@ body {
 
 .control-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   text-transform: uppercase;
   font-size: 16px;
   line-height: normal;
@@ -352,7 +331,6 @@ body {
 
 .filters-form__form-group-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: normal;
   color: #000000;
@@ -374,7 +352,6 @@ body {
 
 .sort-form__label {
   font-family: "Open Sans Regular", "Arial", sans-serif;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -385,3 +362,4 @@ body {
 .sort-form__input-radio:checked + .sort-form__label {
   opacity: 1;
 }
+
