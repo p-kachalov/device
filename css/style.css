@@ -383,4 +383,31 @@ body {
   letter-spacing: 0.01em;
 }
 
+.pagination {
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0.08);
+}
 
+.pagination__page-list {
+  list-style: none;
+}
+
+.pagination__previous-button,
+.pagination__next-button,
+.pagination__page-button {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+}
+
+.pagination__page-button {
+  opacity: 0.3;
+}
+
+.pagination__page-button.active {
+  opacity: 1;
+}
