@@ -206,6 +206,41 @@ body {
   letter-spacing: 0.01em;
 }
 
+.categories__link::before {
+  content: "";
+  display: block;
+  height: 160px;
+  width: 160px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.categories__link.categories__link_vr::before {
+  background-image: url("../img/popular-1.svg");
+}
+
+.categories__link.categories__link_monopod::before {
+  background-image: url("../img/popular-2.svg");
+}
+
+.categories__link.categories__link_action-cam::before {
+  background-image: url("../img/popular-3.svg");
+}
+
+.categories__link.categories__link_fitness-tracker::before {
+  background-image: url("../img/popular-4.svg");
+}
+
+.categories__link.categories__link_smart-watch::before {
+  background-image: url("../img/popular-5.svg");
+}
+
+.categories__link.categories__link_quadcopter::before {
+  background-image: url("../img/popular-6.svg");
+}
+
 .services {
   color: #464646;
   background-color: #e5e5e5;
