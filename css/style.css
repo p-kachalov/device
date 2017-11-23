@@ -217,27 +217,27 @@ body {
   background-position: center center;
 }
 
-.categories__link.categories__link_vr::before {
+.categories__link_vr::before {
   background-image: url("../img/popular-1.svg");
 }
 
-.categories__link.categories__link_monopod::before {
+.categories__link_monopod::before {
   background-image: url("../img/popular-2.svg");
 }
 
-.categories__link.categories__link_action-cam::before {
+.categories__link_action-cam::before {
   background-image: url("../img/popular-3.svg");
 }
 
-.categories__link.categories__link_fitness-tracker::before {
+.categories__link_fitness-tracker::before {
   background-image: url("../img/popular-4.svg");
 }
 
-.categories__link.categories__link_smart-watch::before {
+.categories__link_smart-watch::before {
   background-image: url("../img/popular-5.svg");
 }
 
-.categories__link.categories__link_quadcopter::before {
+.categories__link_quadcopter::before {
   background-image: url("../img/popular-6.svg");
 }
 
@@ -271,15 +271,15 @@ body {
   background-position: center center;
 }
 
-.services__item.services__item_delivery::after {
+.services__item_delivery::after {
   background-image: url("../img/delivery.svg");
 }
 
-.services__item.services__item_warranty::after {
+.services__item_warranty::after {
   background-image: url("../img/warranty.svg");
 }
 
-.services__item.services__item_credit::after {
+.services__item_credit::after {
   background-image: url("../img/credit.svg");
 }
 
