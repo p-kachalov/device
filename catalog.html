@@ -79,28 +79,28 @@
 
       <fieldset class="color-filter filters-form__form-group">
         <legend class="filters-form__form-group-title">Цвет</legend>
-        <ul class="color-filter__color-list">
-          <li class="color-filter__color-list-item">
+        <ul class="filters-form__filter-list">
+          <li class="filters-form__filter-list-item">
             <input type="checkbox" id="color-filter-black" name="color-filter-black" checked
                    class="filters-form__input-checkbox">
             <label for="color-filter-black" class="filters-form__label">Чёрный</label>
           </li>
-          <li class="color-filter__color-list-item">
+          <li class="filters-form__filter-list-item">
             <input type="checkbox" id="color-filter-white" name="color-filter-white"
                    class="filters-form__input-checkbox">
             <label for="color-filter-white" class="filters-form__label">Белый</label>
           </li>
-          <li class="color-filter__color-list-item">
+          <li class="filters-form__filter-list-item">
             <input type="checkbox" id="color-filter-blue" name="color-filter-blue" checked
                    class="filters-form__input-checkbox">
             <label for="color-filter-blue" class="filters-form__label">Синий</label>
           </li>
-          <li class="color-filter__color-list-item">
+          <li class="filters-form__filter-list-item">
             <input type="checkbox" id="color-filter-red" name="color-filter-red" checked
                    class="filters-form__input-checkbox">
             <label for="color-filter-red" class="filters-form__label">Красный</label>
           </li>
-          <li class="color-filter__color-list-item">
+          <li class="filters-form__filter-list-item">
             <input type="checkbox" id="color-filter-pink" name="color-filter-pink"
                    class="filters-form__input-checkbox">
             <label for="color-filter-pink" class="filters-form__label">Розовый</label>
@@ -111,14 +111,18 @@
       <fieldset class="bluetooth-filter filters-form__form-group">
         <legend class="filters-form__form-group-title">Bluetooth</legend>
 
-        <input type="radio" id="bluetooth-filter-yes" name="bluetooth-filter" value="yes" checked
-               class="filters-form__input-radio">
-        <label for="bluetooth-filter-yes" class="filters-form__label">Есть</label>
-
-        <input type="radio" id="bluetooth-filter-no" name="bluetooth-filter" value="no"
-               class="filters-form__input-radio">
-        <label for="bluetooth-filter-no" class="filters-form__label">Нет</label>
-
+        <ul class="filters-form__filter-list">
+          <li class="filters-form__filter-list-item">
+            <input type="radio" id="bluetooth-filter-yes" name="bluetooth-filter" value="yes" checked
+                   class="filters-form__input-radio">
+            <label for="bluetooth-filter-yes" class="filters-form__label">Есть</label>
+          </li>
+          <li class="filters-form__filter-list-item">
+            <input type="radio" id="bluetooth-filter-no" name="bluetooth-filter" value="no"
+                   class="filters-form__input-radio">
+            <label for="bluetooth-filter-no" class="filters-form__label">Нет</label>
+          </li>
+        </ul>
       </fieldset>
 
       <button type="submit" class="filters-form__apply-button">Показать</button>
