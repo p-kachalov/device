@@ -262,6 +262,27 @@ body {
   letter-spacing: 0.01em;
 }
 
+.services__item::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.services__item.services__item_delivery::after {
+  background-image: url("../img/delivery.svg");
+}
+
+.services__item.services__item_warranty::after {
+  background-image: url("../img/warranty.svg");
+}
+
+.services__item.services__item_credit::after {
+  background-image: url("../img/credit.svg");
+}
+
 .section-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 47px;
