@@ -623,6 +623,29 @@ body {
   letter-spacing: 0.01em;
 }
 
+.product__add-to-compare {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  color: #000000;
+
+  background: none;
+  border: none;
+  box-shadow: none;
+
+  opacity: 0.5;
+}
+
+.product__add-to-compare:hover {
+  opacity: 1;
+}
+
+.product__add-to-compare:active {
+  opacity: 0.2;
+}
+
 .pagination {
   color: #000000;
   background-color: rgba(0, 0, 0, 0.08);
