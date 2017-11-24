@@ -638,26 +638,36 @@ body {
   opacity: 1;
 }
 
-.filters-form__input-checkbox + .filters-form__label::before {
+.filters-form__label::before {
   content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../img/checkbox-off.svg");
+}
 
+.filters-form__input-checkbox:disabled + .filters-form__label
+.filters-form__input-radio:disabled + .filters-form__label{
+  opacity: 0.25;
+}
+
+.filters-form__input-checkbox + .filters-form__label::before {
+  background-image: url("../img/checkbox-off.svg");
 }
 
 .filters-form__input-checkbox:checked + .filters-form__label::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  background-position: center center;
   background-image: url("../img/checkbox-on.svg");
 }
+
+.filters-form__input-radio + .filters-form__label::before {
+  background-image: url("../img/radio-off.svg");
+}
+
+.filters-form__input-radio:checked + .filters-form__label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
 
 .sort {
   color: #000000;
