@@ -667,10 +667,29 @@ body {
   text-decoration: none;
 }
 
+.pagination__previous-button:hover,
+.pagination__next-button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination__previous-button:active .pagination__button-text,
+.pagination__next-button:active .pagination__button-text {
+  opacity: 0.3;
+}
+
 .pagination__page-button {
   opacity: 0.3;
+}
+
+.pagination__page-button:hover {
+  opacity: 0.6;
+}
+
+.pagination__page-button:active {
+  opacity: 1;
 }
 
 .pagination__page-button.active {
   opacity: 1;
 }
+
