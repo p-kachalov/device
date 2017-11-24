@@ -383,6 +383,34 @@ body {
   width: 200px;
 }
 
+.feedback-form__input-field,
+.feedback-form__text-area {
+  border: none;
+  background-color: #e5e5e5;
+  opacity: 0.5;
+}
+
+.feedback-form__input-field:hover,
+.feedback-form__text-area:hover {
+  background-color: #e5e5e5;
+  opacity: 0.8;
+}
+
+.feedback-form__input-field:invalid,
+.feedback-form__text-area:invalid {
+  background-color: #edb5b5;
+}
+
+.feedback-form__input-field:focus,
+.feedback-form__text-area:focus {
+  outline: 3px solid #f0c52e;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.feedback-form__text-area {
+  resize: none;
+}
 
 
 /* front page */
