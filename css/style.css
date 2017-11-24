@@ -644,6 +644,14 @@ body {
   opacity: 0.3;
 }
 
+.sort-form__label:hover {
+  opacity: 0.6;
+}
+
+.sort-form__label:active {
+  opacity: 1;
+}
+
 .sort-form__input-radio:checked + .sort-form__label {
   opacity: 1;
 }
@@ -658,6 +666,10 @@ body {
   line-height: normal;
   color: #000000;
   letter-spacing: 0.01em;
+}
+
+.product__image:hover {
+  opacity: 0.3;
 }
 
 .product__cost {
