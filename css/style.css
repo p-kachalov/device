@@ -59,6 +59,43 @@ body {
 }
 
 
+.button {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  color: #000000;
+  background: linear-gradient(to bottom,
+              transparent 0px, transparent 16px,
+              #f0c52e 16px, #f0c52e 24px,
+              transparent 24px, transparent 40px);
+  border: none;
+  box-shadow: none;
+
+  height: 40px;
+  padding: 0px 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #f0c52e 0px, #f0c52e 40px);
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button_tab.active {
+  color: #f7e184;
+  background: linear-gradient(to bottom, #000000 0px, #000000 40px);
+}
+
+
 /* header */
 
 .page-header {
@@ -85,7 +122,7 @@ body {
 }
 
 .logo_header {
-  color: black;
+  color: #000000;
 }
 
 .logo_footer {
@@ -139,6 +176,7 @@ body {
 .user-menu__link_logout {
   opacity: 0.3;
 }
+
 .user-menu__link_logout::before {
   background: none;
 }
