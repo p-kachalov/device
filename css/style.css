@@ -222,6 +222,17 @@ body {
   letter-spacing: 0.2em;
 }
 
+.main-menu__link_extendable::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/plus.svg");
+  opacity: 0.3;
+}
+
 .page-header__main-menu .main-menu__link {
   color: #000000;
 }
