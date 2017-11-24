@@ -59,7 +59,7 @@ body {
 }
 
 
-/* buttons */
+/* buttons and links */
 
 .button {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
@@ -113,6 +113,22 @@ body {
 .filters-form__apply-button,
 .product__add-to-cart {
   width: 200px;
+}
+
+
+
+.logo:hover,
+.user-menu__link:hover,
+.main-menu__link:hover,
+.catalog-submenu__link:hover{
+  opacity: 0.6;
+}
+
+.logo:active,
+.user-menu__link:active,
+.main-menu__link:active,
+.catalog-submenu__link:active{
+  opacity: 0.3;
 }
 
 
@@ -373,13 +389,21 @@ body {
 
 .categories__link::before {
   content: "";
-  display: block;
+  display: inline-flex;
   height: 160px;
   width: 160px;
 
   background-color: rgba(240, 197, 46, 0.5);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.categories__link:hover::before {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.categories__link:active {
+  opacity: 0.3;
 }
 
 .categories__link_vr::before {
@@ -456,6 +480,16 @@ body {
   list-style: none;
 }
 
+.makers-list__link {
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.makers-list__link:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
 .section-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 47px;
@@ -496,7 +530,6 @@ body {
 
 .breadcrumbs {
   list-style: none;
-  opacity: 0.3;
 }
 
 .breadcrumbs__link {
@@ -506,6 +539,15 @@ body {
   text-decoration: none;
   color: #000000;
   letter-spacing: 0.01em;
+  opacity: 0.3;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs__link:active {
+  opacity: 0.1;
 }
 
 .filters {
