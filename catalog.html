@@ -147,11 +147,17 @@
 
         <fieldset class="sort-form__form-group">
           <legend class="sort-form__form-group-title visually-hidden">Направление сортировки</legend>
-          <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending" class="sort-form__input-radio">
-          <label for="sort-by-ascending" class="sort-form__label">По возрастанию</label>
+          <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending"
+                 class="sort-form__input-radio visually-hidden">
+          <label for="sort-by-ascending" class="sort-form__label sort-form__label_ascending">
+            <span class="visually-hidden">По возрастанию</span>
+          </label>
 
-          <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked class="sort-form__input-radio">
-          <label for="sort-by-descending" class="sort-form__label">По убыванию</label>
+          <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked
+                 class="sort-form__input-radio visually-hidden">
+          <label for="sort-by-descending" class="sort-form__label sort-form__label_descending">
+            <span class="visually-hidden">По убыванию</span>
+          </label>
         </fieldset>
       </form>
     </section>

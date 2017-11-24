@@ -652,6 +652,28 @@ body {
   opacity: 1;
 }
 
+.sort-form__label_ascending::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/icon-up-dir.svg");
+
+}
+
+.sort-form__label_descending::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/icon-down-dir.svg");
+
+}
+
 .sort-form__input-radio:checked + .sort-form__label {
   opacity: 1;
 }
