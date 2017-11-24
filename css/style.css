@@ -59,6 +59,8 @@ body {
 }
 
 
+/* buttons */
+
 .button {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -75,7 +77,6 @@ body {
   box-shadow: none;
 
   height: 40px;
-  padding: 0px 20px;
 
   display: inline-flex;
   align-items: center;
@@ -93,6 +94,25 @@ body {
 .button_tab.active {
   color: #f7e184;
   background: linear-gradient(to bottom, #000000 0px, #000000 40px);
+}
+
+.popular-products__link {
+  width: 220px;
+}
+
+.services__navigation-button {
+  width: 160px;
+}
+
+.info__link,
+.contact__link {
+  width: 260px;
+}
+
+.feedback-form__button,
+.filters-form__apply-button,
+.product__add-to-cart {
+  width: 200px;
 }
 
 
@@ -424,7 +444,6 @@ body {
 .makers-list {
   list-style: none;
 }
-
 
 .section-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
