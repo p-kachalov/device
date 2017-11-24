@@ -421,6 +421,11 @@ body {
   background-image: url("../img/credit.svg");
 }
 
+.makers-list {
+  list-style: none;
+}
+
+
 .section-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 47px;
