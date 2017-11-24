@@ -647,7 +647,7 @@ body {
   background-position: center center;
 }
 
-.filters-form__input-checkbox:disabled + .filters-form__label
+.filters-form__input-checkbox:disabled + .filters-form__label,
 .filters-form__input-radio:disabled + .filters-form__label{
   opacity: 0.25;
 }
