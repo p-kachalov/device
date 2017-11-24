@@ -380,6 +380,10 @@ body {
   background-color: #e5e5e5;
 }
 
+.services__services-navigation {
+  list-style: none;
+}
+
 .services__title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 47px;
