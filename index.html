@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -15,9 +17,9 @@
           <input id="search-field" type="search" placeholder="Поиск по сайту" class="search__input-field">
         </div>
         <ul class="user-menu page-header__user-menu">
-          <li class="user-menu__item"><a href="#" class="user-menu__link">Войти</a></li>
-          <li class="user-menu__item"><a href="#" class="user-menu__link">Сравнить</a></li>
-          <li class="user-menu__item"><a href="#" class="user-menu__link">Корзина</a></li>
+          <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_login">Войти</a></li>
+          <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_compare">Сравнить</a></li>
+          <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_cart">Корзина</a></li>
         </ul>
         <ul class="main-menu page-header__main-menu">
           <li class="main-menu__item">
@@ -48,30 +50,6 @@
           <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
         </ul>
 
-        <section class="submenu submenu_catalog">
-          <h2 class="section-title visually-hidden">Каталог товаров</h2>
-          <ul class="catalog-menu">
-            <li class="catalog-menu__item">
-              <a href="#" class="catalog-menu__link">Виртуальная реальность</a>
-            </li>
-            <li class="catalog-menu__item">
-              <a href="#" class="catalog-menu__link">Моноподы для селфи</a>
-            </li>
-            <li class="catalog-menu__item">
-              <a href="#" class="catalog-menu__link">Экшн-камеры</a>
-            </li>
-            <li class="catalog-menu__item">
-              <a href="#" class="catalog-menu__link">Фитнес-браслеты</a>
-            </li>
-            <li class="catalog-menu__item">
-              <a href="#" class="catalog-menu__link">Умные часы</a>
-            </li>
-            <li class="catalog-menu__item">
-              <a href="#" class="catalog-menu__link">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </section>
-
       </nav>
     </header>
 
@@ -92,8 +70,9 @@
         <input type="radio" id="slider-slide-3" name="slider-slide-number" value="3">
         <label for="slider-slide-3">Квадрокоптер</label>
 
-        <ol class="popular-products">
+        <ul class="popular-products">
           <li class="popular-products__item">
+            <span class="popular-products__slide-number">01</span>
             <b class="popular-products__lead">Делай селфи, как БенСтиллер!</b>
             <img src="img/slider-1.png" width="384" height="486" class="popular-products__image"
                  alt="Чёрно-фиолетовая палка для селфи в разных ракурсах.">
@@ -107,10 +86,11 @@
               <dt class="popular-products__property-name">Материал</dt>
               <dd class="popular-products__property-value">Карбон</dd>
             </dl>
-            <a href="#" class="popular-products__link">Подробнее</a>
+            <a href="#" class="popular-products__link button">Подробнее</a>
           </li>
 
           <li class="popular-products__item">
+            <span class="popular-products__slide-number">02</span>
             <b class="popular-products__lead">Худеем правильно!</b>
             <img src="img/slider-2.png" width="345" height="485" class="popular-products__image"
                  alt="Чёрный фитнес-браслет, на экране которого видна надпись: 'Я вижу, что ты снова ешь :('.">
@@ -120,10 +100,11 @@
               <dt class="popular-products__property-name">Без подзарядки</dt>
               <dd class="popular-products__property-value">48 часов</dd>
             </dl>
-            <a href="#" class="popular-products__link">Подробнее</a>
+            <a href="#" class="popular-products__link button">Подробнее</a>
           </li>
 
           <li class="popular-products__item">
+            <span class="popular-products__slide-number">03</span>
             <b class="popular-products__lead">Порхает как бабочка, жалит как пчела!</b>
             <img src="img/slider-3.png" width="526" height="334" class="popular-products__image"
                  alt="Чёрно-белый квадрокоптер стреляющий лазером.">
@@ -135,32 +116,32 @@
               <dt class="popular-products__property-name">Радиус поражения</dt>
               <dd class="popular-products__property-value">50 м</dd>
             </dl>
-            <a href="#" class="popular-products__link">Подробнее</a>
+            <a href="#" class="popular-products__link button">Подробнее</a>
           </li>
 
-        </ol>
+        </ul>
 
       </section>
 
       <section class="popular-categories">
         <h2 class="section-title visually-hidden">Популярные категории</h2>
         <ul class="categories">
-          <li class="categories__item"><a href="#" class="categories__link">
+          <li class="categories__item"><a href="#" class="categories__link categories__link_vr">
             Виртуальная реальность
           </a></li>
-          <li class="categories__item"><a href="#" class="categories__link">
+          <li class="categories__item"><a href="#" class="categories__link categories__link_monopod">
             Моноподы для селфи
           </a></li>
-          <li class="categories__item"><a href="#" class="categories__link">
+          <li class="categories__item"><a href="#" class="categories__link categories__link_action-cam">
             Экшн-камеры
           </a></li>
-          <li class="categories__item"><a href="#" class="categories__link">
+          <li class="categories__item"><a href="#" class="categories__link categories__link_fitness-tracker">
             Фитнес-браслеты
           </a></li>
-          <li class="categories__item"><a href="#" class="categories__link">
+          <li class="categories__item"><a href="#" class="categories__link categories__link_smart-watch">
             Умные часы
           </a></li>
-          <li class="categories__item"><a href="#" class="categories__link">
+          <li class="categories__item"><a href="#" class="categories__link categories__link_quadcopter">
             Квадрокоптеры
           </a></li>
         </ul>
@@ -170,26 +151,26 @@
         <h2 class="section-title visually-hidden">Услуги</h2>
         <ul class="services__services-navigation">
           <li class="services__navigation-item">
-            <button type="button" class="services__navigation-button">Доставка</button>
+            <button type="button" class="services__navigation-button button button_tab active">Доставка</button>
           </li>
           <li class="services__navigation-item">
-            <button type="button" class="services__navigation-button">Гарантия</button>
+            <button type="button" class="services__navigation-button button button_tab">Гарантия</button>
           </li>
           <li class="services__navigation-item">
-            <button type="button" class="services__navigation-button">Кредит</button>
+            <button type="button" class="services__navigation-button button button_tab">Кредит</button>
           </li>
         </ul>
-        <section class="services__item">
-          <h3 class="subsection-title">Доставка</h3>
-          <p class="subsection-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <section class="services__item services__item_delivery">
+          <h3 class="services__title">Доставка</h3>
+          <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </section>
-        <section class="services__item">
-          <h3 class="subsection-title">Гарантия</h3>
-          <p class="subsection-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        <section class="services__item services__item_warranty">
+          <h3 class="services__title">Гарантия</h3>
+          <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </section>
-        <section class="services__item">
-          <h3 class="subsection-title">Кредит</h3>
-          <p class="subsection-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        <section class="services__item services__item_credit">
+          <h3 class="services__title">Кредит</h3>
+          <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </section>
       </section>
 
@@ -229,22 +210,21 @@
             <li class="delivery-methods__item">Автотрейдинг</li>
             <li class="delivery-methods__item">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="info__link">Подробнее о нас</a>
+          <a href="#" class="info__link button">Подробнее о нас</a>
         </section>
 
         <section class="contact">
           <h2 class="section-title">Контакты</h2>
           <p class="section-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="map">
-            <img src="img/map.jpg" width="560" height="222" class="map__image" alt="Улица Строителей, 15">
-          </div>
-          <a href="#" class="contact__link">Напишите нам</a>
+          <img src="img/map.jpg" width="560" height="222" class="map-image" alt="Улица Строителей, 15">
+          <a href="#" class="contact__link button">Напишите нам</a>
         </section>
       </div>
 
       <section class="popup popup_map">
         <h2 class="section-title visually-hidden">Интерактивная карта</h2>
-        <button type="button" class="popup__close-button">X</button>
+        <button type="button" class="popup__close-button"><span class="visually-hidden">Закрыть</span></button>
+        <img src="img/map-big.jpg" width="994" height="593" class="big-map-image" alt="Улица Строителей, 15">
       </section>
 
       <section class="popup popup_feedback">
@@ -253,22 +233,25 @@
           <p class="feedback-form__form-group">
             <label for="feedback-form-user-name" class="feedback-form__label">Ваше имя:</label>
             <input type="text" id="feedback-form-user-name" name="feedback-form-user-name"
+                   placeholder="Представьтесь, пожалуйста"
                    class="feedback-form__input-field">
 
             <label for="feedback-form-user-email" class="feedback-form__label">Ваш e-mail:</label>
             <input type="email" id="feedback-form-user-email" name="feedback-form-user-email"
+                   placeholder="Для отправки ответа"
                    class="feedback-form__input-field">
           </p>
 
           <p class="feedback-form__form-group">
             <label for="feedback-form-letter-text" class="feedback-form__label">Текст письма:</label>
             <textarea id="feedback-form-letter-text" name="feedback-form-letter-text"
+                      placeholder="В свободной форме"
                       class="feedback-form__text-area"></textarea>
           </p>
 
-          <button type="submit" class="feedback-form__button">Отправить</button>
+          <button type="submit" class="feedback-form__button button">Отправить</button>
         </form>
-        <button type="button" class="popup__close-button">X</button>
+        <button type="button" class="popup__close-button"><span class="visually-hidden">Закрыть</span></button>
       </section>
 
     </main>
@@ -293,9 +276,15 @@
       </div>
       <div class="page-footer__bottom">
         <ul class="social">
-          <li class="social__item"><a href="#" class="social__link social__link_facebook">Facebook</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link_instagram">Instagram</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link_twitter">Twitter</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link_facebook">
+            <span class="visually-hidden">Facebook</span>
+          </a></li>
+          <li class="social__item"><a href="#" class="social__link social__link_instagram">
+            <span class="visually-hidden">Instagram</span>
+          </a></li>
+          <li class="social__item"><a href="#" class="social__link social__link_twitter">
+            <span class="visually-hidden">Twitter</span>
+          </a></li>
         </ul>
         <p class="copyright">
           <a href="#" class="copyright__link">
