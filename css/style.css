@@ -626,6 +626,39 @@ body {
   list-style: none;
 }
 
+.filters-form__label {
+  opacity: 1;
+}
+
+.filters-form__label:hover {
+  opacity: 0.6;
+}
+
+.filters-form__label:active {
+  opacity: 1;
+}
+
+.filters-form__input-checkbox + .filters-form__label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/checkbox-off.svg");
+
+}
+
+.filters-form__input-checkbox:checked + .filters-form__label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/checkbox-on.svg");
+}
+
 .sort {
   color: #000000;
   background-color: rgba(0, 0, 0, 0.08);
