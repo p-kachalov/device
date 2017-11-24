@@ -343,6 +343,34 @@ body {
 
 /* popup */
 
+.popup__close-button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  padding: 0px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+}
+
+.popup__close-button:hover {
+  opacity: 1;
+}
+
+.popup__close-button:active {
+  opacity: 0.3;
+}
+
+.popup__close-button::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/modal-close.svg");
+}
+
 .feedback-form__label {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -354,6 +382,7 @@ body {
 .feedback-form__button {
   width: 200px;
 }
+
 
 
 /* front page */
