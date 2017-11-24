@@ -120,14 +120,16 @@ body {
 .logo:hover,
 .user-menu__link:hover,
 .main-menu__link:hover,
-.catalog-submenu__link:hover{
+.catalog-submenu__link:hover,
+.copyright__link:hover {
   opacity: 0.6;
 }
 
 .logo:active,
 .user-menu__link:active,
 .main-menu__link:active,
-.catalog-submenu__link:active{
+.catalog-submenu__link:active,
+.copyright__link:active {
   opacity: 0.3;
 }
 
@@ -273,6 +275,18 @@ body {
 
 /* footer */
 
+.page-footer__user-menu .user-menu__link {
+  opacity: 0.7;
+}
+
+.page-footer__user-menu .user-menu__link:hover {
+  opacity: 1;
+}
+
+.page-footer__user-menu .user-menu__link:active {
+  opacity: 0.3;
+}
+
 .address,
 .phone {
   font-family: "Open Sans Light", "Arial", sans-serif;
@@ -304,6 +318,14 @@ body {
   opacity: 0.3;
 }
 
+.social__link:hover::before {
+  opacity: 0.6;
+}
+
+.social__link:active::before {
+  opacity: 0.1;
+}
+
 .social__link_facebook::before  {
   background-image: url("../img/fb.svg");
 }
@@ -315,6 +337,7 @@ body {
 .social__link_twitter::before  {
   background-image: url("../img/twitter.svg");
 }
+
 
 
 /* popup */
@@ -692,4 +715,3 @@ body {
 .pagination__page-button.active {
   opacity: 1;
 }
-
