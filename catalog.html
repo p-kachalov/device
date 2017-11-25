@@ -10,18 +10,19 @@
 
 <header class="page-header">
   <nav class="main-navigation">
-
     <a href="#" class="logo logo_header">Device</a>
-    <div class="search">
-      <label for="search-field" class="search__label visually-hidden">Поиск</label>
-      <input id="search-field" type="search" placeholder="Поиск по сайту" class="search__input-field">
+    <div class="search-and-user-menu">
+      <div class="search">
+        <label for="search-field" class="search__label visually-hidden">Поиск</label>
+        <input id="search-field" type="search" placeholder="Поиск по сайту" class="search__input-field">
+      </div>
+      <ul class="user-menu page-header__user-menu">
+        <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_user">Валентин Петухов</a></li>
+        <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_logout">Выйти</a></li>
+        <li class="user-menu__item user-menu__item_separator"><a href="#" class="user-menu__link user-menu__link_compare">Сравнить</a></li>
+        <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_cart">Корзина</a></li>
+      </ul>
     </div>
-    <ul class="user-menu page-header__user-menu">
-      <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_user">Валентин Петухов</a></li>
-      <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_logout">Выйти</a></li>
-      <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_compare">Сравнить</a></li>
-      <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_cart">Корзина</a></li>
-    </ul>
     <ul class="main-menu page-header__main-menu">
       <li class="main-menu__item">
         <a href="#" class="main-menu__link main-menu__link_extendable">Каталог товаров</a>
@@ -50,7 +51,6 @@
       <li class="main-menu__item"><a href="#" class="main-menu__link">Гарантия</a></li>
       <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
     </ul>
-
   </nav>
 </header>
 
