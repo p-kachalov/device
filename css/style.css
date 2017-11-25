@@ -64,7 +64,8 @@ body {
 .popup,
 .popular-products__item:not(:nth-child(1)),
 .services__item_warranty,
-.services__item_credit{
+.services__item_credit,
+.slider__control {
   display: none;
 }
 
@@ -324,6 +325,85 @@ body {
 }
 
 
+.main-content {
+  color: #464646;
+  background-color: transparent;
+
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slider {
+  min-height: 500px;
+  padding: 0px 60px;
+  margin-top: -120px;
+  margin-bottom: 90px;
+}
+
+.popular-products {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.popular-products__item {
+  display: flex;
+}
+
+.popular-products__image-wrapper {
+  width: 560px;
+}
+
+.popular-products__info-wrapper {
+  width: 500px;
+  margin-left: 40px;
+}
+
+.popular-products__slide-number {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 180px;
+  line-height: 180px;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+  float: right;
+}
+
+.popular-products__lead {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: normal;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.popular-products__description {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  letter-spacing: 0.01em;
+}
+
+.popular-products__property-name {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464646;
+  letter-spacing: 0.01em;
+}
+
+.popular-products__property-value {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: normal;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.popular-products__link {
+  width: 220px;
+}
 
 
 .page-footer {
@@ -343,13 +423,6 @@ body {
   color: #ffffff;
 }
 
-
-
-
-.main-content {
-  color: #464646;
-  background-color: #ffffff;
-}
 
 
 
@@ -500,54 +573,6 @@ body {
 
 
 /* front page */
-
-.popular-products {
-  list-style: none;
-}
-
-.popular-products__link {
-  width: 220px;
-}
-
-.popular-products__slide-number {
-  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-size: 180px;
-  line-height: 180px;
-  color: #ffffff;
-  letter-spacing: 0.01em;
-}
-
-.popular-products__lead {
-  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-size: 47px;
-  line-height: normal;
-  color: #000000;
-  letter-spacing: 0.01em;
-}
-
-.popular-products__description {
-  font-family: "Open Sans Light", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  color: #464646;
-  letter-spacing: 0.01em;
-}
-
-.popular-products__property-name {
-  font-family: "Open Sans Light", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 20px;
-  color: #464646;
-  letter-spacing: 0.01em;
-}
-
-.popular-products__property-value {
-  font-family: "Gilroy Light", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: normal;
-  color: #000000;
-  letter-spacing: 0.01em;
-}
 
 .categories {
   list-style: none;
