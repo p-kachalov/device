@@ -404,7 +404,7 @@ body {
   margin: 0px auto;
   margin-bottom: 180px;
   padding: 0px 20px;
-  width: 1200px;
+  width: 1160px;
 }
 
 .categories {
@@ -486,7 +486,7 @@ body {
   margin: 0px auto;
   margin-bottom: 100px;
   padding: 0px 20px;
-  width: 1200px;
+  width: 1160px;
 
   display: flex;
   justify-content: space-between;
@@ -567,7 +567,7 @@ body {
 }
 
 .makers {
-  width: 1200px;
+  width: 1160px;
   margin: 0px auto;
   margin-bottom: 100px;
 }
@@ -590,7 +590,55 @@ body {
   opacity: 1;
 }
 
+.info-and-contacts {
+  width: 1160px;
+  margin: 0px auto;
+  padding: 0px 20px;
 
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 500px;
+}
+
+.contact {
+  width: 560px;
+}
+
+.section-title {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: normal;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.section-text {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  letter-spacing: 0em;
+}
+
+.delivery-methods {
+  list-style: circle;
+}
+
+.delivery-methods__item {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+  letter-spacing: 0em;
+}
+
+.info__link,
+.contact__link {
+  width: 260px;
+}
 
 
 
@@ -759,44 +807,6 @@ body {
 
 .feedback-form__text-area {
   resize: none;
-}
-
-
-/* front page */
-
-
-
-.section-title {
-  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-size: 47px;
-  line-height: normal;
-  color: #000000;
-  letter-spacing: 0.01em;
-}
-
-.section-text {
-  font-family: "Open Sans Light", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  color: #464646;
-  letter-spacing: 0em;
-}
-
-.delivery-methods {
-  list-style: circle;
-}
-
-.delivery-methods__item {
-  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 40px;
-  color: #000000;
-  letter-spacing: 0em;
-}
-
-.info__link,
-.contact__link {
-  width: 260px;
 }
 
 /* inner page */
