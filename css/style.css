@@ -566,6 +566,29 @@ body {
   background-image: url("../img/credit.svg");
 }
 
+.makers {
+  width: 1200px;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+
+.makers-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.makers-list__link {
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.makers-list__link:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
 
 
 
@@ -742,19 +765,6 @@ body {
 /* front page */
 
 
-.makers-list {
-  list-style: none;
-}
-
-.makers-list__link {
-  filter: grayscale(100%);
-  opacity: 0.2;
-}
-
-.makers-list__link:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-}
 
 .section-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
