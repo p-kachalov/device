@@ -111,19 +111,19 @@ body {
 /* header and footer */
 
 .page-header {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.main-navigation {
   color: #000000;
   background-color: rgba(240, 197, 46, 0.5);
 
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+
+  margin: auto;
   margin-top: 40px;
   min-height: 300px;
-
-  padding: 0 60px;
+  width: 1040px;
 
   display: flex;
   flex-direction: column;
@@ -324,19 +324,11 @@ body {
   opacity: 0.3;
 }
 
-
-.main-content {
-  color: #464646;
-  background-color: transparent;
-
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .slider {
+  width: 1160px;
   min-height: 500px;
-  padding: 0px 60px;
+  padding: 0px;
+  margin: auto;
   margin-top: -120px;
   margin-bottom: 90px;
 }
@@ -349,15 +341,18 @@ body {
 
 .popular-products__item {
   display: flex;
+  justify-content: space-between;
 }
 
 .popular-products__image-wrapper {
   width: 560px;
+  display: flex;
+  justify-content: center;
 }
 
 .popular-products__info-wrapper {
   width: 500px;
-  margin-left: 40px;
+  margin-right: 60px;
 }
 
 .popular-products__slide-number {
@@ -405,11 +400,19 @@ body {
   width: 220px;
 }
 
+.popular-categories {
+  margin: 0px auto;
+  margin-bottom: 180px;
+  padding: 0px 20px;
+  width: 1200px;
+}
+
 .categories {
   list-style: none;
   margin: 0px;
-  margin-bottom: 80px;
   padding: 0px;
+
+
 
   display: flex;
   justify-content: space-between;
@@ -471,6 +474,101 @@ body {
 .categories__link_quadcopter::before {
   background-image: url("../img/popular-6.svg");
 }
+
+.services {
+  color: #464646;
+  background-color: #e5e5e5;
+  min-height: 290px;
+  width: 100%;
+}
+
+.services__content-wrapper {
+  margin: 0px auto;
+  margin-bottom: 100px;
+  padding: 0px 20px;
+  width: 1200px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__services-navigation {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+
+  min-height: 320px;
+  width: 280px;
+  border-right: 7px solid #000000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services__navigation-item.active {
+  background-color: #000000;
+}
+
+.services__navigation-button {
+  width: 160px;
+}
+
+.services__item.active {
+  width: 700px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item-wrapper {
+  width: 460px;
+}
+
+.services__title {
+  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: normal;
+  color: #000000;
+  letter-spacing: 0.01em;
+
+  margin: 0px;
+}
+
+.services__text {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #464646;
+  letter-spacing: 0.01em;
+
+  margin: 0px;
+}
+
+.services__item::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.services__item_delivery::after {
+  background-image: url("../img/delivery.svg");
+}
+
+.services__item_warranty::after {
+  background-image: url("../img/warranty.svg");
+}
+
+.services__item_credit::after {
+  background-image: url("../img/credit.svg");
+}
+
+
+
+
 
 
 
@@ -643,55 +741,6 @@ body {
 
 /* front page */
 
-.services {
-  color: #464646;
-  background-color: #e5e5e5;
-}
-
-.services__services-navigation {
-  list-style: none;
-}
-
-.services__navigation-button {
-  width: 160px;
-}
-
-.services__title {
-  font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-  font-size: 47px;
-  line-height: normal;
-  color: #000000;
-  letter-spacing: 0.01em;
-}
-
-.services__text {
-  font-family: "Open Sans Light", "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  color: #464646;
-  letter-spacing: 0.01em;
-}
-
-.services__item::after {
-  content: "";
-  display: block;
-  width: 180px;
-  height: 220px;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.services__item_delivery::after {
-  background-image: url("../img/delivery.svg");
-}
-
-.services__item_warranty::after {
-  background-image: url("../img/warranty.svg");
-}
-
-.services__item_credit::after {
-  background-image: url("../img/credit.svg");
-}
 
 .makers-list {
   list-style: none;
