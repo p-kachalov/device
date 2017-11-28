@@ -842,12 +842,10 @@ body {
 
 .filters-wrapper {
   width: 468px;
-}
-
-.filters {
-  color: #000000;
   background-color: rgba(0, 0, 0, 0.08);
 }
+
+.filters {}
 
 .control-title {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
