@@ -235,17 +235,30 @@ img {
   background-position: center center;
 }
 
-.user-menu__link_login::before,
-.user-menu__link_user::before {
-  background-image: url("../img/user.svg");
+.page-header__user-menu .user-menu__link_login::before,
+.page-header__user-menu .user-menu__link_user::before {
+  background-image: url("../img/user-dark.svg");
 }
 
-.user-menu__link_compare::before {
-  background-image: url("../img/compare.svg");
+.page-header__user-menu .user-menu__link_compare::before {
+  background-image: url("../img/compare-dark.svg");
 }
 
-.user-menu__link_cart::before {
-  background-image: url("../img/cart.svg");
+.page-header__user-menu .user-menu__link_cart::before {
+  background-image: url("../img/cart-dark.svg");
+}
+
+.page-footer__user-menu .user-menu__link_login::before,
+.page-footer__user-menu .user-menu__link_user::before {
+  background-image: url("../img/user-light.svg");
+}
+
+.page-footer__user-menu .user-menu__link_compare::before {
+  background-image: url("../img/compare-light.svg");
+}
+
+.page-footer__user-menu .user-menu__link_cart::before {
+  background-image: url("../img/cart-light.svg");
 }
 
 .user-menu__link_logout {
@@ -695,10 +708,6 @@ img {
 
 .page-footer__user-menu .user-menu__link:active {
   opacity: 0.3;
-}
-
-.page-footer__user-menu .user-menu__link::before {
-  background-color: #ffc600;
 }
 
 .page-footer__middle {
