@@ -64,111 +64,113 @@
       <li class="breadcrumbs__item"><a class="breadcrumbs__link">Моноподы для селфи</a></li>
     </ul>
   </div>
-
-  <div class="horizontal-decorative-line"></div>
   <div class="catalog-content-wrapper">
 
-    <aside class="filters">
-      <h2 class="control-title">Фильтр:</h2>
-      <form class="filters-form">
-        <fieldset class="filters-form__form-group">
-          <legend class="filters-form__form-group-title">Стоимость</legend>
-          <div class="cost-range">
-            От
-            <div class="cost-range__start-point"></div>
-            <div class="cost-range__value-line"></div>
-            <div class="cost-range__end-point"></div>
-            До
-          </div>
-        </fieldset>
+    <div class="filters-wrapper">
+      <aside class="filters">
+        <h2 class="control-title">Фильтр:</h2>
+        <form class="filters-form">
+          <fieldset class="filters-form__form-group">
+            <legend class="filters-form__form-group-title">Стоимость</legend>
+            <div class="cost-range">
+              От
+              <div class="cost-range__start-point"></div>
+              <div class="cost-range__value-line"></div>
+              <div class="cost-range__end-point"></div>
+              До
+            </div>
+          </fieldset>
 
-        <fieldset class="color-filter filters-form__form-group">
-          <legend class="filters-form__form-group-title">Цвет</legend>
-          <ul class="filters-form__filter-list">
-            <li class="filters-form__filter-list-item">
-              <input type="checkbox" id="color-filter-black" name="color-filter-black" checked
-                     class="filters-form__input-checkbox visually-hidden">
-              <label for="color-filter-black" class="filters-form__label">Чёрный</label>
-            </li>
-            <li class="filters-form__filter-list-item">
-              <input type="checkbox" id="color-filter-white" name="color-filter-white"
-                     class="filters-form__input-checkbox visually-hidden" disabled>
-              <label for="color-filter-white" class="filters-form__label">Белый</label>
-            </li>
-            <li class="filters-form__filter-list-item">
-              <input type="checkbox" id="color-filter-blue" name="color-filter-blue" checked
-                     class="filters-form__input-checkbox visually-hidden">
-              <label for="color-filter-blue" class="filters-form__label">Синий</label>
-            </li>
-            <li class="filters-form__filter-list-item">
-              <input type="checkbox" id="color-filter-red" name="color-filter-red" checked
-                     class="filters-form__input-checkbox visually-hidden">
-              <label for="color-filter-red" class="filters-form__label">Красный</label>
-            </li>
-            <li class="filters-form__filter-list-item">
-              <input type="checkbox" id="color-filter-pink" name="color-filter-pink"
-                     class="filters-form__input-checkbox visually-hidden">
-              <label for="color-filter-pink" class="filters-form__label">Розовый</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="color-filter filters-form__form-group">
+            <legend class="filters-form__form-group-title">Цвет</legend>
+            <ul class="filters-form__filter-list">
+              <li class="filters-form__filter-list-item">
+                <input type="checkbox" id="color-filter-black" name="color-filter-black" checked
+                       class="filters-form__input-checkbox visually-hidden">
+                <label for="color-filter-black" class="filters-form__label">Чёрный</label>
+              </li>
+              <li class="filters-form__filter-list-item">
+                <input type="checkbox" id="color-filter-white" name="color-filter-white"
+                       class="filters-form__input-checkbox visually-hidden" disabled>
+                <label for="color-filter-white" class="filters-form__label">Белый</label>
+              </li>
+              <li class="filters-form__filter-list-item">
+                <input type="checkbox" id="color-filter-blue" name="color-filter-blue" checked
+                       class="filters-form__input-checkbox visually-hidden">
+                <label for="color-filter-blue" class="filters-form__label">Синий</label>
+              </li>
+              <li class="filters-form__filter-list-item">
+                <input type="checkbox" id="color-filter-red" name="color-filter-red" checked
+                       class="filters-form__input-checkbox visually-hidden">
+                <label for="color-filter-red" class="filters-form__label">Красный</label>
+              </li>
+              <li class="filters-form__filter-list-item">
+                <input type="checkbox" id="color-filter-pink" name="color-filter-pink"
+                       class="filters-form__input-checkbox visually-hidden">
+                <label for="color-filter-pink" class="filters-form__label">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="bluetooth-filter filters-form__form-group">
-          <legend class="filters-form__form-group-title">Bluetooth</legend>
+          <fieldset class="bluetooth-filter filters-form__form-group">
+            <legend class="filters-form__form-group-title">Bluetooth</legend>
 
-          <ul class="filters-form__filter-list">
-            <li class="filters-form__filter-list-item">
-              <input type="radio" id="bluetooth-filter-yes" name="bluetooth-filter" value="yes" checked
-                     class="filters-form__input-radio visually-hidden">
-              <label for="bluetooth-filter-yes" class="filters-form__label">Есть</label>
-            </li>
-            <li class="filters-form__filter-list-item">
-              <input type="radio" id="bluetooth-filter-no" name="bluetooth-filter" value="no"
-                     class="filters-form__input-radio visually-hidden">
-              <label for="bluetooth-filter-no" class="filters-form__label">Нет</label>
-            </li>
-          </ul>
-        </fieldset>
+            <ul class="filters-form__filter-list">
+              <li class="filters-form__filter-list-item">
+                <input type="radio" id="bluetooth-filter-yes" name="bluetooth-filter" value="yes" checked
+                       class="filters-form__input-radio visually-hidden">
+                <label for="bluetooth-filter-yes" class="filters-form__label">Есть</label>
+              </li>
+              <li class="filters-form__filter-list-item">
+                <input type="radio" id="bluetooth-filter-no" name="bluetooth-filter" value="no"
+                       class="filters-form__input-radio visually-hidden">
+                <label for="bluetooth-filter-no" class="filters-form__label">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <button type="submit" class="filters-form__apply-button button">Показать</button>
-      </form>
-    </aside>
+          <button type="submit" class="filters-form__apply-button button">Показать</button>
+        </form>
+      </aside>
+    </div>
 
     <div class="sort-and-catalog">
-      <section class="sort">
+      <div class="sort-wrapper">
+        <section class="sort">
         <h2 class="control-title">Сортировка:</h2>
         <form class="sort-form">
-          <fieldset class="sort-form__form-group">
-            <legend class="sort-form__form-group-title visually-hidden">Поле сортировки</legend>
-            <input type="radio" id="sort-by-cost" name="sort-by" value="cost" checked
-                   class="sort-form__input-radio visually-hidden">
-            <label for="sort-by-cost" class="sort-form__label">По цене</label>
+            <fieldset class="sort-form__form-group">
+              <legend class="sort-form__form-group-title visually-hidden">Поле сортировки</legend>
+              <input type="radio" id="sort-by-cost" name="sort-by" value="cost" checked
+                     class="sort-form__input-radio visually-hidden">
+              <label for="sort-by-cost" class="sort-form__label">По цене</label>
 
-            <input type="radio" id="sort-by-type" name="sort-by" value="type"
-                   class="sort-form__input-radio visually-hidden">
-            <label for="sort-by-type" class="sort-form__label">По типу</label>
+              <input type="radio" id="sort-by-type" name="sort-by" value="type"
+                     class="sort-form__input-radio visually-hidden">
+              <label for="sort-by-type" class="sort-form__label">По типу</label>
 
-            <input type="radio" id="sort-by-popularity" name="sort-by" value="popularity"
-                   class="sort-form__input-radio visually-hidden">
-            <label for="sort-by-popularity" class="sort-form__label">По популярности</label>
-          </fieldset>
+              <input type="radio" id="sort-by-popularity" name="sort-by" value="popularity"
+                     class="sort-form__input-radio visually-hidden">
+              <label for="sort-by-popularity" class="sort-form__label">По популярности</label>
+            </fieldset>
 
-          <fieldset class="sort-form__form-group">
-            <legend class="sort-form__form-group-title visually-hidden">Направление сортировки</legend>
-            <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending"
-                   class="sort-form__input-radio visually-hidden">
-            <label for="sort-by-ascending" class="sort-form__label sort-form__label_ascending">
-              <span class="visually-hidden">По возрастанию</span>
-            </label>
+            <fieldset class="sort-form__form-group">
+              <legend class="sort-form__form-group-title visually-hidden">Направление сортировки</legend>
+              <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending"
+                     class="sort-form__input-radio visually-hidden">
+              <label for="sort-by-ascending" class="sort-form__label sort-form__label_ascending">
+                <span class="visually-hidden">По возрастанию</span>
+              </label>
 
-            <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked
-                   class="sort-form__input-radio visually-hidden">
-            <label for="sort-by-descending" class="sort-form__label sort-form__label_descending">
-              <span class="visually-hidden">По убыванию</span>
-            </label>
-          </fieldset>
-        </form>
+              <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked
+                     class="sort-form__input-radio visually-hidden">
+              <label for="sort-by-descending" class="sort-form__label sort-form__label_descending">
+                <span class="visually-hidden">По убыванию</span>
+              </label>
+            </fieldset>
+          </form>
       </section>
+      </div>
 
       <section class="catalog-view">
 
@@ -230,6 +232,7 @@
 
       </section>
     </div>
+
   </div>
 </main>
 
