@@ -454,9 +454,8 @@ img {
   margin: 0px;
   padding: 0px;
 
-
-
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -468,19 +467,31 @@ img {
   color: #000000;
   letter-spacing: 0.01em;
 
+  display: block;
   width: 160px;
-  display: flex;
-  flex-direction: column;
+  padding-top: 200px;
+  position: relative;
 }
 
 .categories__link::before {
   content: "";
-  display: inline-flex;
+  display: block;
   height: 160px;
   width: 160px;
+  position: absolute;
+  top: 0px;
 
-  margin-bottom: 35px;
   background-color: rgba(240, 197, 46, 0.5);
+}
+
+.categories__link::after {
+  content: "";
+  display: block;
+  height: 160px;
+  width: 160px;
+  position: absolute;
+  top: 0px;
+
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -489,31 +500,31 @@ img {
   background-color: rgba(240, 197, 46, 1);
 }
 
-.categories__link:active {
+.categories__link:active::after {
   opacity: 0.3;
 }
 
-.categories__link_vr::before {
+.categories__link_vr::after {
   background-image: url("../img/popular-1.svg");
 }
 
-.categories__link_monopod::before {
+.categories__link_monopod::after {
   background-image: url("../img/popular-2.svg");
 }
 
-.categories__link_action-cam::before {
+.categories__link_action-cam::after {
   background-image: url("../img/popular-3.svg");
 }
 
-.categories__link_fitness-tracker::before {
+.categories__link_fitness-tracker::after {
   background-image: url("../img/popular-4.svg");
 }
 
-.categories__link_smart-watch::before {
+.categories__link_smart-watch::after {
   background-image: url("../img/popular-5.svg");
 }
 
-.categories__link_quadcopter::before {
+.categories__link_quadcopter::after {
   background-image: url("../img/popular-6.svg");
 }
 
