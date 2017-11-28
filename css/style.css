@@ -922,8 +922,14 @@ img {
   padding: 0px;
 }
 
+.filters-form__filter-list-item {
+  margin-bottom: 20px;
+}
+
 .filters-form__label {
   opacity: 1;
+  position: relative;
+  padding-left: 40px;
 }
 
 .filters-form__label:hover {
@@ -936,7 +942,8 @@ img {
 
 .filters-form__label::before {
   content: "";
-  display: inline-block;
+  display: block;
+  position: absolute;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -954,6 +961,7 @@ img {
 
 .filters-form__input-checkbox:checked + .filters-form__label::before {
   background-image: url("../img/checkbox-on.svg");
+  margin-left: 1px;
 }
 
 .filters-form__input-radio + .filters-form__label::before {
