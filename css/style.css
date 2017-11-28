@@ -649,15 +649,15 @@ body {
 .info__link,
 .contact__link {
   width: 260px;
+  margin-bottom: 80px;
 }
-
 
 .page-footer {
   color: #ffffff;
   background-color: #464646;
 
   width: 100%;
-  margin-top: 80px;
+  margin-top: 5px;
 }
 
 .page-footer__wrapper {
@@ -1017,6 +1017,7 @@ body {
 .catalog-view {
   width: 760px;
   padding-left: 72px;
+  margin-bottom: 75px;
 }
 
 .products {
