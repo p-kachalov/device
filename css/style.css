@@ -198,6 +198,7 @@ img {
 
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page-header__user-menu {
@@ -266,6 +267,7 @@ img {
 
   min-height: 30px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page-header__main-menu .main-menu__item {
