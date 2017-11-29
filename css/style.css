@@ -52,10 +52,6 @@ body {
   margin: 0px auto;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 
 .visually-hidden {
@@ -70,10 +66,8 @@ img {
 /* display none */
 .catalog-submenu,
 .popup,
-.popular-products__item:not(:nth-child(1)),
 .services__item_warranty,
-.services__item_credit,
-.slider__control {
+.services__item_credit {
   display: none;
 }
 
@@ -452,6 +446,35 @@ img {
   margin: auto;
   margin-top: -120px;
   margin-bottom: 90px;
+  position: relative;
+}
+
+.slider__control {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 350px;
+}
+
+.slider__control-label {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.slider__control-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/slider-control-off.svg");
+}
+
+.slider__input-radio:checked + .slider__control-label::before {
+  background-image: url("../img/slider-control-on.svg");
 }
 
 .popular-products {
@@ -461,6 +484,10 @@ img {
 }
 
 .popular-products__item {
+  display: none;
+}
+
+.popular-products__item.active {
   display: flex;
   justify-content: space-between;
 }
@@ -474,15 +501,19 @@ img {
 .popular-products__info-wrapper {
   width: 500px;
   margin-right: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .popular-products__slide-number {
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 180px;
-  line-height: 180px;
+  line-height: 170px;
   color: #ffffff;
   letter-spacing: 0.01em;
-  float: right;
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
 }
 
 .popular-products__lead {
@@ -491,6 +522,15 @@ img {
   line-height: normal;
   color: #000000;
   letter-spacing: 0.01em;
+  margin: 0px;
+  margin-top: -80px;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+
+.props-and-button-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .popular-products__description {
@@ -499,6 +539,21 @@ img {
   line-height: 30px;
   color: #464646;
   letter-spacing: 0.01em;
+  margin: 0px;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+
+.popular-products__properties {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+.popular-products__property-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 75px;
 }
 
 .popular-products__property-name {
@@ -515,10 +570,12 @@ img {
   line-height: normal;
   color: #000000;
   letter-spacing: 0.01em;
+  margin: 0px;
 }
 
 .popular-products__link {
   width: 220px;
+  margin-bottom: 50px;
 }
 
 .popular-categories {

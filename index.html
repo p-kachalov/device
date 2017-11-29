@@ -63,38 +63,53 @@
         <h2 class="section-title visually-hidden">Популярные товары</h2>
 
         <div class="slider__control">
-          <input type="radio" id="slider-slide-1" name="slider-slide-number" value="1" checked>
-          <label for="slider-slide-1">Палка для селфи</label>
+          <input type="radio" id="slider-slide-1" name="slider-slide-number" value="1" checked
+                  class="slider__input-radio visually-hidden">
+          <label for="slider-slide-1" class="slider__control-label">
+            <span class="visually-hidden">Палка для селфи</span>
+          </label>
 
-          <input type="radio" id="slider-slide-2" name="slider-slide-number" value="2">
-          <label for="slider-slide-2">Фитнес-браслет</label>
+          <input type="radio" id="slider-slide-2" name="slider-slide-number" value="2"
+                 class="slider__input-radio visually-hidden">
+          <label for="slider-slide-2" class="slider__control-label">
+            <span class="visually-hidden">Фитнес-браслет</span>
+          </label>
 
-          <input type="radio" id="slider-slide-3" name="slider-slide-number" value="3">
-          <label for="slider-slide-3">Квадрокоптер</label>
+          <input type="radio" id="slider-slide-3" name="slider-slide-number" value="3"
+                 class="slider__input-radio visually-hidden">
+          <label for="slider-slide-3" class="slider__control-label">
+            <span class="visually-hidden">Квадрокоптер</span>
+          </label>
         </div>
 
         <ul class="popular-products">
-          <li class="popular-products__item">
+          <li class="popular-products__item active">
             <div class="popular-products__image-wrapper">
               <img src="img/slider-1.png" width="384" height="486" class="popular-products__image"
                    alt="Чёрно-фиолетовая палка для селфи в разных ракурсах.">
             </div>
             <div class="popular-products__info-wrapper">
-              <div class="popular-products__slide-head-wrapper">
-                <span class="popular-products__slide-number">01</span>
-                <b class="popular-products__lead">Делай селфи, как БенСтиллер!</b>
-              </div>
+              <p class="popular-products__slide-number">01</p>
+              <p class="popular-products__lead">Делай селфи,<br> как БенСтиллер!</p>
               <p class="popular-products__description">Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <dl class="popular-products__properties">
-                <dt class="popular-products__property-name">Длина палки</dt>
-                <dd class="popular-products__property-value">8,5 м</dd>
-                <dt class="popular-products__property-name">Вес палки</dt>
-                <dd class="popular-products__property-value">5 кг</dd>
-                <dt class="popular-products__property-name">Материал</dt>
-                <dd class="popular-products__property-value">Карбон</dd>
-              </dl>
-              <a href="#" class="popular-products__link button">Подробнее</a>
+              <div class="props-and-button-wrapper">
+                <dl class="popular-products__properties">
+                  <div class="popular-products__property-wrapper">
+                    <dt class="popular-products__property-name">Длина палки</dt>
+                    <dd class="popular-products__property-value">8,5 м</dd>
+                  </div>
+                  <div class="popular-products__property-wrapper">
+                    <dt class="popular-products__property-name">Вес палки</dt>
+                    <dd class="popular-products__property-value">5 кг</dd>
+                  </div>
+                  <div class="popular-products__property-wrapper">
+                    <dt class="popular-products__property-name">Материал</dt>
+                    <dd class="popular-products__property-value">Карбон</dd>
+                  </div>
+                </dl>
+                <a href="#" class="popular-products__link button">Подробнее</a>
+              </div>
             </div>
           </li>
 
@@ -104,17 +119,19 @@
                    alt="Чёрный фитнес-браслет, на экране которого видна надпись: 'Я вижу, что ты снова ешь :('.">
             </div>
             <div class="popular-products__info-wrapper">
-              <div class="popular-products__slide-head-wrapper">
-                <span class="popular-products__slide-number">02</span>
-                <b class="popular-products__lead">Худеем правильно!</b>
-              </div>
+              <p class="popular-products__slide-number">02</p>
+              <p class="popular-products__lead">Худеем<br> правильно!</p>
               <p class="popular-products__description">Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.</p>
-              <dl class="popular-products__properties">
-                <dt class="popular-products__property-name">Без подзарядки</dt>
-                <dd class="popular-products__property-value">48 часов</dd>
-              </dl>
-              <a href="#" class="popular-products__link button">Подробнее</a>
+              <div class="props-and-button-wrapper">
+                <dl class="popular-products__properties">
+                  <div class="popular-products__property-wrapper">
+                    <dt class="popular-products__property-name">Без подзарядки</dt>
+                    <dd class="popular-products__property-value">48 часов</dd>
+                  </div>
+                </dl>
+                <a href="#" class="popular-products__link button">Подробнее</a>
+              </div>
             </div>
           </li>
 
@@ -124,19 +141,23 @@
                    alt="Чёрно-белый квадрокоптер стреляющий лазером.">
             </div>
             <div class="popular-products__info-wrapper">
-              <div class="popular-products__slide-head-wrapper">
-                <span class="popular-products__slide-number">03</span>
-                <b class="popular-products__lead">Порхает как бабочка, жалит как пчела!</b>
-              </div>
+              <p class="popular-products__slide-number">03</p>
+              <p class="popular-products__lead">Порхает как бабочка, жалит как пчела!</p>
               <p class="popular-products__description">Этот обычный, на первый взгляд, квадрокоптер оснащен
                 мощным лазером, замаскированным под стандартную камеру.</p>
-              <dl class="popular-products__properties">
-                <dt class="popular-products__property-name">Дальность полета</dt>
-                <dd class="popular-products__property-value">800 м</dd>
-                <dt class="popular-products__property-name">Радиус поражения</dt>
-                <dd class="popular-products__property-value">50 м</dd>
-              </dl>
-              <a href="#" class="popular-products__link button">Подробнее</a>
+              <div class="props-and-button-wrapper">
+                <dl class="popular-products__properties">
+                  <div class="popular-products__property-wrapper">
+                    <dt class="popular-products__property-name">Дальность полета</dt>
+                    <dd class="popular-products__property-value">800 м</dd>
+                  </div>
+                  <div class="popular-products__property-wrapper">
+                    <dt class="popular-products__property-name">Радиус поражения</dt>
+                    <dd class="popular-products__property-value">50 м</dd>
+                  </div>
+                </dl>
+                <a href="#" class="popular-products__link button">Подробнее</a>
+              </div>
             </div>
           </li>
         </ul>
