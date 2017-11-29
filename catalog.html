@@ -12,10 +12,11 @@
   <nav class="main-navigation">
     <a href="#" class="logo logo_header">Device</a>
     <div class="search-and-user-menu">
-      <div class="search">
-        <label for="search-field" class="search__label visually-hidden">Поиск</label>
-        <input id="search-field" type="search" placeholder="Поиск по сайту" class="search__input-field">
-      </div>
+      <form class="search">
+        <input id="search-field" type="search" required class="search__input-field">
+        <label for="search-field" class="search__label">Поиск по сайту</label>
+        <button type="submit" class="search-button">Найти</button>
+      </form>
       <ul class="user-menu page-header__user-menu">
         <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_user">Валентин Петухов</a></li>
         <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_logout">Выйти</a></li>
