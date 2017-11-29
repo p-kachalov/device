@@ -800,10 +800,16 @@ body {
 
 .info {
   width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contact {
   width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .section-title {
