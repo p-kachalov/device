@@ -496,6 +496,7 @@ body {
   width: 560px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .popular-products__info-wrapper {
@@ -503,6 +504,7 @@ body {
   margin-right: 60px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .popular-products__slide-number {
@@ -514,6 +516,17 @@ body {
   text-align: right;
   margin: 0px;
   padding: 0px;
+}
+
+.popular-products__slide-number::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  border-bottom: 8px solid #ffffff;
+  top: 30px;
+  left: 0px;
 }
 
 .popular-products__lead {
