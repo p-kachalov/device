@@ -185,10 +185,6 @@ img {
   display: flex;
 }
 
-.search:focus {
-  background: red;
-}
-
 .search__label {
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 15px;
