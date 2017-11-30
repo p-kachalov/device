@@ -78,11 +78,23 @@
           <fieldset class="filters-form__form-group">
             <legend class="filters-form__form-group-title">Стоимость</legend>
             <div class="cost-range">
-              От
-              <div class="cost-range__start-point"></div>
-              <div class="cost-range__value-line"></div>
-              <div class="cost-range__end-point"></div>
-              До
+              <div class="range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
+                </div>
+                <div class="range-controls__range-toggle range-controls__range-toggle_min"></div>
+                <div class="range-controls__range-toggle range-controls__range-toggle_max"></div>
+              </div>
+              <div class="cost-controls">
+                <label class="cost-controls__label cost-controls__label_min">
+                  От
+                  <input type="text" name="min-cost" value="0" class="cost-controls__input">
+                </label>
+                <label class="cost-controls__label cost-controls__label_max">
+                  До
+                  <input type="text" name="max-cost" value="5000" class="cost-controls__input">
+                </label>
+              </div>
             </div>
           </fieldset>
 
