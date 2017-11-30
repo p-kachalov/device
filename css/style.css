@@ -280,6 +280,19 @@ body {
   flex-wrap: wrap;
 }
 
+.user-menu__item {
+  margin: 0px 20px;
+}
+
+.user-menu__item:first-child {
+  margin-left: 0px;
+}
+
+.user-menu__item:last-child {
+  margin-right: 0px;
+}
+
+
 .page-header__user-menu .user-menu__item_separator {
   margin-left: auto;
 }
@@ -317,6 +330,7 @@ body {
 
 .user-menu__link_logout {
   padding-left: 0px;
+  margin-left: -20px;
 }
 
 .page-header__user-menu .user-menu__link_login::before,
@@ -368,17 +382,24 @@ body {
   justify-content: flex-end;
 }
 
-.page-header__main-menu .main-menu__item {
-  width: 140px;
+.main-menu__item {
+  margin: 0px 20px;
+}
+
+.main-menu__item:first-child {
+  margin-left: 0px;
+}
+
+.main-menu__item:last-child {
+  margin-right: 0px;
 }
 
 .page-header__main-menu .main-menu__item:first-child {
-  width: 300px;
   margin-right: auto;
 }
 
 .page-header__main-menu .main-menu__item:last-child {
-  margin-left: 80px;
+  margin-left: 75px;
   text-align: right;
 }
 
@@ -389,15 +410,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin: 0px 40px;
-}
-
-.main-menu__link:first-child {
-  margin-left: 0px;
-}
-
-.main-menu__link:last-child {
-  margin-right: 0px;
+  margin: 0px;
 }
 
 .main-menu__link:hover {
@@ -878,6 +891,9 @@ body {
   margin-bottom: 80px;
 }
 
+
+/* footer */
+
 .page-footer {
   color: #ffffff;
   background-color: #464646;
@@ -950,7 +966,6 @@ body {
 
 .page-footer__main-menu .main-menu__link {
   color: #ffffff;
-  padding: 5px 20px;
 }
 
 .page-footer__bottom {
