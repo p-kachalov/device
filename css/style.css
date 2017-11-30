@@ -974,8 +974,10 @@ body {
 .page-footer__bottom::before {
   content: "";
   display: block;
-  width: 100px;
+  width: 80px;
   height: 10px;
+  margin: 0px;
+  margin-right: 20px;
   border-bottom: 8px solid #ffc600;
   top: 30px;
   left: 0px;
@@ -986,9 +988,9 @@ body {
   margin: 0px;
   padding: 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  min-width: 160px;
+  min-width: 440px;
 }
 
 .social__link {
@@ -1002,6 +1004,14 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.3;
+}
+
+.social__item {
+  margin-right: 20px;
+}
+
+.social__item:last-child {
+  margin-right: 0px;
 }
 
 .social__link:hover {
@@ -1022,6 +1032,13 @@ body {
 
 .social__link_twitter {
   background-image: url("../img/twitter.svg");
+}
+
+.copyright {
+  margin: 0px;
+  padding: 0px;
+  width: 100px;
+  text-align: right;
 }
 
 .copyright__link:hover {
