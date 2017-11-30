@@ -281,11 +281,8 @@ body {
 }
 
 .user-menu__item {
-  margin: 0px 20px;
-}
-
-.user-menu__item:first-child {
-  margin-left: 0px;
+  margin: 0px;
+  margin-right: 40px;
 }
 
 .user-menu__item:last-child {
@@ -383,11 +380,8 @@ body {
 }
 
 .main-menu__item {
-  margin: 0px 20px;
-}
-
-.main-menu__item:first-child {
-  margin-left: 0px;
+  margin: 0px;
+  margin-right: 40px;
 }
 
 .main-menu__item:last-child {
@@ -399,8 +393,7 @@ body {
 }
 
 .page-header__main-menu .main-menu__item:last-child {
-  margin-left: 75px;
-  text-align: right;
+  margin-left: 55px;
 }
 
 .main-menu__link {
