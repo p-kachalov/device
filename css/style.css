@@ -184,6 +184,8 @@ body {
   position: absolute;
   top: 0px;
   left: 40px;
+
+  cursor: text;
 }
 
 .search__label:hover
