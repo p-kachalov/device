@@ -938,18 +938,6 @@ body {
   justify-content: space-between;
 }
 
-.address {
-  order: 1;
-}
-
-.page-footer__main-menu {
-  order: 2;
-}
-
-.phone {
-  order: 3;
-}
-
 .address,
 .phone {
   font-family: "Open Sans Light", "Arial", sans-serif;
@@ -958,10 +946,26 @@ body {
   color: #ffffff;
   letter-spacing: 0em;
   margin: 0px;
+
+  width: 300px;
+}
+
+.address {
+  order: 1;
+  text-align: left;
+}
+
+.phone {
+  order: 3;
+  text-align: right;
 }
 
 .page-footer__main-menu {
+  order: 2;
+  width: 600px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .page-footer__main-menu .main-menu__link {
