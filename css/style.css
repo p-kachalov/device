@@ -365,6 +365,7 @@ body {
   min-height: 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .page-header__main-menu .main-menu__item {
@@ -398,15 +399,25 @@ body {
   opacity: 0.3;
 }
 
+.main-menu__link_extendable {
+  position: relative;
+  padding-right: 30px;
+}
+
 .main-menu__link_extendable::after {
   content: "";
-  display: inline-block;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/plus.svg");
   opacity: 0.3;
+
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 1px;
+
 }
 
 .page-header__main-menu .main-menu__link {
@@ -924,8 +935,13 @@ body {
   margin: 0px;
 }
 
+.page-footer__main-menu {
+  display: flex;
+}
+
 .page-footer__main-menu .main-menu__link {
   color: #ffffff;
+  padding: 5px 20px;
 }
 
 .page-footer__bottom {
