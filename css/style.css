@@ -879,7 +879,8 @@ body {
   opacity: 0.2;
 }
 
-.makers-list__link:hover {
+.makers-list__link:hover,
+.makers-list__link:focus {
   filter: grayscale(0%);
   opacity: 1;
 }
