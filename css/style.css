@@ -264,19 +264,20 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.user-menu-header-wrapper {
+  width: 500px;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .user-menu {
   list-style: none;
   margin: 0px;
   padding: 0px;
-
-  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-}
-
-.page-header__user-menu {
-  width: 500px;
-  display: flex;
 }
 
 .page-header__user-menu .user-menu__item_separator {
@@ -290,7 +291,6 @@ body {
   text-decoration: none;
   letter-spacing: 0.01em;
   margin: 0px;
-  margin-right: 20px;
   padding-left: 30px;
   position: relative;
 }
