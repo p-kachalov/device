@@ -194,18 +194,20 @@
       <section class="services">
         <h2 class="section-title visually-hidden">Услуги</h2>
         <div class="services__content-wrapper">
-          <ul class="services__services-navigation">
-            <li class="services__navigation-item active">
-              <button type="button" class="services__navigation-button button button_tab active">Доставка</button>
-            </li>
-            <li class="services__navigation-item">
-              <button type="button" class="services__navigation-button button button_tab">Гарантия</button>
-            </li>
-            <li class="services__navigation-item">
-              <button type="button" class="services__navigation-button button button_tab">Кредит</button>
-            </li>
-          </ul>
-          <section class="services__item services__item_delivery active">
+          <input type="radio" id="service-delivery" name="service" value="delivery" checked
+                 class="slider__input-radio visually-hidden">
+          <input type="radio" id="service-warranty" name="service" value="warranty"
+                 class="slider__input-radio visually-hidden">
+          <input type="radio" id="service-credit" name="service" value="credit"
+                 class="slider__input-radio visually-hidden">
+
+          <div class="services__services-navigation">
+            <label for="service-delivery" class="services__navigation-button button button_tab">Доставка</label>
+            <label for="service-warranty" class="services__navigation-button button button_tab">Гарантия</label>
+            <label for="service-credit" class="services__navigation-button button button_tab">Кредит</label>
+          </div>
+
+          <section class="services__item services__item_delivery">
             <div class="services__item-wrapper">
               <h3 class="services__title">Доставка</h3>
               <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
