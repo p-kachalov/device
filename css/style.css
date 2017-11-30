@@ -1396,6 +1396,11 @@ body {
   color: #000000;
   letter-spacing: 0em;
   opacity: 0.3;
+  margin-right: 30px;
+}
+
+.sort-form__label:last-child {
+  margin-right: 0px;
 }
 
 .sort-form__input-radio:focus + .sort-form__label {
@@ -1410,11 +1415,16 @@ body {
   opacity: 1;
 }
 
+.sort-form__label_ascending,
+.sort-form__label_ascending {
+  margin-right: 0px;
+}
+
 .sort-form__label_ascending::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/icon-up-dir.svg");
@@ -1424,8 +1434,8 @@ body {
 .sort-form__label_descending::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/icon-down-dir.svg");
