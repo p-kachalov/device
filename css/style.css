@@ -1362,6 +1362,7 @@ body {
 
 .sort-and-catalog {
   width: 972px;
+  margin-bottom: 75px;
 }
 
 .sort-wrapper {
@@ -1550,26 +1551,40 @@ body {
   background-color: rgba(0, 0, 0, 0.08);
 
   min-height: 70px;
-  width: 700px;
-  padding: 0px 30px;
+  width: 760px;
+  padding: 0px;
 
   display: flex;
   justify-content: space-between;
 }
 
-.pagination__page-item,
-.pagination__next-button,
-.pagination__previous-button {
-  margin: auto 0px;
+.pagination__previous-button,
+.pagination__next-button {
+  width: 100px;
+  margin: 0px;
+  padding: 30px;
+  text-align: center;
 }
 
 .pagination__page-list {
   list-style: none;
-  margin: 0px;
+  margin: auto 0px;
   padding: 0px;
 
+  width: 440px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.pagination__page-item {
+  margin-right: 30px;
+}
+
+.pagination__page-item:last-child {
+  margin-right: 0px;
+}
+
 
 .pagination__previous-button,
 .pagination__next-button,
