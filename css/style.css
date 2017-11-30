@@ -389,6 +389,15 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  margin: 0px 40px;
+}
+
+.main-menu__link:first-child {
+  margin-left: 0px;
+}
+
+.main-menu__link:last-child {
+  margin-right: 0px;
 }
 
 .main-menu__link:hover {
