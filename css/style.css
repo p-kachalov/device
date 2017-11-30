@@ -90,6 +90,7 @@ body {
   height: 40px;
 
   display: inline-flex;
+  vertical-align: middle;
   align-items: center;
   justify-content: center;
 }
@@ -221,7 +222,7 @@ body {
 
 .search::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -1500,6 +1501,7 @@ body {
 .sort-form__label_ascending::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -1511,6 +1513,7 @@ body {
 .sort-form__label_descending::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
