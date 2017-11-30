@@ -960,7 +960,13 @@ body {
 }
 
 .page-footer__bottom::before {
-  content: "-";
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  border-bottom: 8px solid #ffc600;
+  top: 30px;
+  left: 0px;
 }
 
 .social {
