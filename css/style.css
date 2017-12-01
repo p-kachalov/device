@@ -1449,7 +1449,7 @@ body {
 
 .sort-wrapper {
   background-color: rgba(0, 0, 0, 0.08);
-  padding-left: 72px;
+  padding-left: 70px;
 }
 
 .sort {
@@ -1460,7 +1460,7 @@ body {
 .sort-form {
   width: 560px;
   min-height: 70px;
-  margin-left: 40px;
+  margin-left: auto;
 
   display: flex;
   justify-content: space-between;
@@ -1500,7 +1500,7 @@ body {
 }
 
 .sort-form__label_ascending,
-.sort-form__label_ascending {
+.sort-form__label_descending {
   margin-right: 0px;
 }
 
@@ -1508,8 +1508,8 @@ body {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/icon-up-dir.svg");
@@ -1520,8 +1520,8 @@ body {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../img/icon-down-dir.svg");
@@ -1534,7 +1534,7 @@ body {
 
 .catalog-view {
   width: 855px;
-  padding-left: 50px;
+  padding-left: 70px;
   padding-top: 60px;
 }
 
