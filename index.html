@@ -275,32 +275,40 @@
         </section>
       </div>
 
+
       <section class="popup popup_map">
         <h2 class="section-title visually-hidden">Интерактивная карта</h2>
         <button type="button" class="popup__close-button"><span class="visually-hidden">Закрыть</span></button>
-        <img src="img/map-big.jpg" width="994" height="593" class="big-map-image" alt="Улица Строителей, 15">
+        <iframe width="960" height="560" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2015&key=AIzaSyA1STQ6lxw6EAVJ6BvMMFctYRCW_Frz5lU" allowfullscreen></iframe>
       </section>
 
       <section class="popup popup_feedback">
         <h2 class="section-title visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form">
           <p class="feedback-form__form-group">
-            <label for="feedback-form-user-name" class="feedback-form__label">Ваше имя:</label>
-            <input type="text" id="feedback-form-user-name" name="feedback-form-user-name"
-                   placeholder="Представьтесь, пожалуйста"
-                   class="feedback-form__input-field">
+            <label for="feedback-form-user-name" class="feedback-form__label">
+              Ваше имя:
+              <input type="text" id="feedback-form-user-name" name="feedback-form-user-name"
+                     placeholder="Представьтесь, пожалуйста"
+                     class="feedback-form__input-field">
+            </label>
 
-            <label for="feedback-form-user-email" class="feedback-form__label">Ваш e-mail:</label>
-            <input type="email" id="feedback-form-user-email" name="feedback-form-user-email"
-                   placeholder="Для отправки ответа"
-                   class="feedback-form__input-field">
+            <label for="feedback-form-user-email" class="feedback-form__label">
+              Ваш e-mail:
+              <input type="email" id="feedback-form-user-email" name="feedback-form-user-email"
+                     placeholder="Для отправки ответа"
+                     class="feedback-form__input-field">
+            </label>
           </p>
 
           <p class="feedback-form__form-group">
-            <label for="feedback-form-letter-text" class="feedback-form__label">Текст письма:</label>
-            <textarea id="feedback-form-letter-text" name="feedback-form-letter-text"
-                      placeholder="В свободной форме"
-                      class="feedback-form__text-area"></textarea>
+            <label for="feedback-form-letter-text" class="feedback-form__label">
+              Текст письма:
+              <textarea id="feedback-form-letter-text" name="feedback-form-letter-text"
+                        placeholder="В свободной форме"
+                        class="feedback-form__text-area"></textarea>
+            </label>
+
           </p>
 
           <button type="submit" class="feedback-form__button button">Отправить</button>
