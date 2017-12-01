@@ -61,14 +61,6 @@ body {
   margin: -1px; padding: 0; border: 0;
 }
 
-/* display none */
-.catalog-submenu,
-.services__item_warranty,
-.services__item_credit {
-  display: none;
-}
-
-
 /* main button */
 
 .button {
@@ -385,6 +377,7 @@ body {
 .main-menu__item {
   margin: 0px;
   margin-right: 40px;
+  position: relative;
 }
 
 .main-menu__item:last-child {
@@ -443,13 +436,37 @@ body {
   color: #000000;
 }
 
+.catalog-submenu-wrapper {
+  position: absolute;
+  top: 32px;
+  left: -60px;
+  z-index: 50;
+  background: #ffffff;
+  background-image: linear-gradient(to bottom, rgba(240, 197, 46, 0.5) 0%, rgba(240, 197, 46, 0.5) 100%);
+  padding: 25px 60px;
+  width: 1040px;
+  min-height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  display: none;
+}
+
 .catalog-submenu {
   list-style: none;
   margin: 0px;
   padding: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-right: 20px;
+}
 
-  width: 600px;
-  min-height: 100px;
+.catalog-submenu__item {
+  width: 240px;
 }
 
 .catalog-submenu__link {
