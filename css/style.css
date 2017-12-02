@@ -1578,7 +1578,7 @@ body {
   position: relative;
 }
 
-.product.new:before {
+.product_new:before {
   content: "New";
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
   font-size: 14px;
