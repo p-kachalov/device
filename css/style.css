@@ -48,7 +48,7 @@ body {
   background-color: white;
   letter-spacing: 0.01em;
 
-  width: 1440px;
+  width: 1200px;
   margin: 0px auto;
 }
 
@@ -1258,7 +1258,6 @@ body {
 }
 
 .filters-wrapper {
-  width: 468px;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
@@ -1285,7 +1284,7 @@ body {
 }
 
 .filters-form {
-  padding-left: 200px;
+  padding-left: 80px;
   padding-top: 70px;
 }
 
@@ -1462,7 +1461,7 @@ body {
 }
 
 .sort-and-catalog {
-  width: 972px;
+  width: 850px;
   margin-bottom: 75px;
 }
 
