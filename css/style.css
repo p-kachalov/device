@@ -1464,12 +1464,12 @@ body {
   margin-bottom: 75px;
 }
 
-.sort-wrapper {
+.sort {
   background-color: rgba(0, 0, 0, 0.08);
   padding-left: 70px;
 }
 
-.sort {
+.sort-wrapper {
   width: 760px;
   display: flex;
 }
