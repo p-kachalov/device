@@ -438,7 +438,7 @@ body {
 
 .catalog-submenu {
   position: absolute;
-  top: 32px;
+  top: 25px;
   left: -60px;
   z-index: 50;
   background: #ffffff;
@@ -449,6 +449,10 @@ body {
   display: none;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+.catalog-submenu:hover {
+  display: flex;
 }
 
 .main-menu__link_extendable:hover + .catalog-submenu {
