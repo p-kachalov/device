@@ -1437,7 +1437,7 @@ body {
 
 .filters-form__input-checkbox:checked + .filters-form__label::before {
   background-image: url("../img/checkbox-on.svg");
-  margin-left: 1px;
+  margin-left: 2px;
 }
 
 .filters-form__input-checkbox:focus + .filters-form__label::before {
