@@ -788,8 +788,8 @@ body {
 }
 
 .services__item {
-  width: 700px;
-  margin-right: 60px;
+  width: 760px;
+  margin-left: 120px;
   justify-content: space-between;
   padding-top: 70px;
   position: relative;
@@ -826,7 +826,7 @@ body {
   position: absolute;
   right: 0px;
   top: 50px;
-  width: 140px;
+  width: 260px;
   height: 220px;
   background-repeat: no-repeat;
   background-position: center center;
