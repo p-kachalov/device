@@ -139,7 +139,6 @@ body {
 
   /* pixel perfect */
   margin-left: -3px;
-
 }
 
 .logo:hover,
@@ -541,7 +540,7 @@ body {
 }
 
 .popular-products__info-wrapper {
-  width: 500px;
+  width: 501px;
   margin-right: 60px;
   display: flex;
   flex-direction: column;
