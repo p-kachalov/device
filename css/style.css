@@ -557,7 +557,7 @@ body {
   padding: 0px;
   margin: auto;
   margin-top: -123px;
-  margin-bottom: 90px;
+  margin-bottom: 105px;
   position: relative;
 }
 
@@ -854,6 +854,7 @@ body {
 
 .categories__link_monopod::after {
   background-image: url("../img/popular-2.svg");
+  background-position: bottom center;
 }
 
 .categories__link_action-cam::after {
@@ -895,19 +896,20 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  top: -100px;
+  top: -102px;
 }
 
 .services__services-navigation {
-  width: 280px;
+  width: 277px;
   border-right: 7px solid #000000;
   padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .services__navigation-button {
   width: 110px;
   padding: 0px 25px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .services__item {
@@ -933,6 +935,7 @@ body {
   color: #000000;
   letter-spacing: 0.01em;
   margin: 0px;
+  margin-bottom: 25px;
 }
 
 .services__text {
@@ -949,8 +952,8 @@ body {
   content: "";
   display: block;
   position: absolute;
-  right: 0px;
-  top: 50px;
+  right: 5px;
+  top: 57px;
   width: 260px;
   height: 220px;
   background-repeat: no-repeat;
