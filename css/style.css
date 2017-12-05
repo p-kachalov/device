@@ -576,7 +576,7 @@ body {
   align-items: center;
   position: absolute;
   right: 20px;
-  top: 350px;
+  bottom: 130px;
   z-index: 10;
 }
 
