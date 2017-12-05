@@ -1582,6 +1582,11 @@ body {
   position: relative;
 }
 
+.product img {
+  width: 360px;
+  height: 380px;
+}
+
 .product_new:before {
   content: "New";
   font-family: "Gilroy Extra Bold", "Arial", sans-serif;
