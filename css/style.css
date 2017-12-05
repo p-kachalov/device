@@ -1804,6 +1804,8 @@ body {
   top: 70px;
   left: 50%;
   margin-left: -480px;
+
+  overflow-y: scroll;
 }
 
 .popup-show {
