@@ -65,7 +65,10 @@ window.addEventListener("keydown", function (evt) {
     }
 
     function makeColor(item) {
-      item.src = item.src.substr(0, item.src.length - 9) + ".png";
+
+      if (item.src.substr(item.src.length - 9) === "-gray.png") {
+        item.src = item.src.substr(0, item.src.length - 9) + ".png";
+      }
     }
 
     function makeGray(item) {
