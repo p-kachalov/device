@@ -1158,9 +1158,14 @@ body {
 
 }
 
-.map-image {
-  margin: 0px;
+.contact__map-link {
   margin-bottom: 70px;
+}
+
+.contact__map-image {
+  width: 560px;
+  height: 222px;
+  margin: 0px;
 }
 
 .info__link,
