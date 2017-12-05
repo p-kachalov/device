@@ -878,12 +878,11 @@ body {
   background-color: #e5e5e5;
   min-height: 290px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 65px;
 }
 
 .services__content-wrapper {
   margin: 0px auto;
-  margin-bottom: 100px;
   padding: 0px 20px;
   width: 1160px;
 
@@ -1028,7 +1027,7 @@ body {
 .makers {
   width: 1160px;
   margin: 0px auto;
-  margin-bottom: 100px;
+  margin-bottom: 74px;
 }
 
 .makers-list {
@@ -1085,7 +1084,7 @@ body {
 }
 
 .info {
-  width: 500px;
+  width: 475px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1120,7 +1119,7 @@ body {
   letter-spacing: 0.01em;
 
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .section-text {
@@ -1131,12 +1130,14 @@ body {
   letter-spacing: 0em;
 
   margin: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .delivery-methods {
   list-style: none;
-  margin: 40px 0px;
+  margin: 0px;
+  margin-top: 35px;
+  margin-bottom: 55px;
   padding: 0px;
 }
 
@@ -1165,7 +1166,8 @@ body {
 }
 
 .contact__map-link {
-  margin-bottom: 70px;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 
 .contact__map-image {
