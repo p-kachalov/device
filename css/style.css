@@ -2139,15 +2139,16 @@ body {
 }
 
 .feedback-form__input-field {
-  width: 360px;
+  width: 300px;
   min-height: 50px;
-
+  padding: 0px 20px;
 }
 
 .feedback-form__text-area {
 
-  width: 760px;
+  width: 720px;
   min-height: 155px;
+  padding: 20px;
 
 }
 
