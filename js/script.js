@@ -44,3 +44,52 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+/* dirty hack for IE grayscale */
+(function() {
+
+  if (getInternetExplorerVersion() >= 10){
+
+    var logos = document.querySelectorAll(".makers-list__image");
+    for (var i = 0; i < logos.length; i++) {
+      var item = logos[i];
+
+      item.addEventListener("mouseover", function (event) {
+        makeColor(event.target);
+      });
+      item.addEventListener("mouseout", function (event) {
+        makeGray(event.target);
+      });
+
+      makeGray(item);
+    }
+
+    function makeColor(item) {
+      item.src = item.src.substr(0, item.src.length - 9) + ".png";
+    }
+
+    function makeGray(item) {
+      item.src = item.src.substr(0, item.src.length - 4) + "-gray.png";
+    }
+
+  };
+
+  function getInternetExplorerVersion(){
+    var rv = -1;
+    if (navigator.appName == 'Microsoft Internet Explorer'){
+      var ua = navigator.userAgent;
+      var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+      if (re.exec(ua) != null)
+        rv = parseFloat( RegExp.$1 );
+    }
+    else if (navigator.appName == 'Netscape'){
+      var ua = navigator.userAgent;
+      var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+      if (re.exec(ua) != null)
+        rv = parseFloat( RegExp.$1 );
+    }
+    return rv;
+  };
+
+})();
+
