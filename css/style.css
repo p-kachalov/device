@@ -1700,6 +1700,8 @@ body {
   border: none;
   margin: auto 0px;
   padding: 0px;
+  min-width: 60px;
+  max-width: 500px;
 }
 
 .sort-form__label {
@@ -1710,6 +1712,8 @@ body {
   letter-spacing: 0em;
   opacity: 0.3;
   margin-right: 30px;
+
+  display: inline-block;
 }
 
 .sort-form__label:last-child {
