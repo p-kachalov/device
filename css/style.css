@@ -1543,8 +1543,10 @@ body {
   justify-content: center;
 }
 
-.filters .control-title {
+.filters-title-wrapper {
+  /* fix flex bug in ie */
   width: 268px;
+  display: flex;
 }
 
 .filters-form {
