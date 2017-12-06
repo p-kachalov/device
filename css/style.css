@@ -2144,6 +2144,10 @@ body {
   background-position: center center;
 }
 
+.map-frame {
+  border: none;
+}
+
 .popup_feedback {
   background-color: #ffffff;
 }
