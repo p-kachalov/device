@@ -1735,6 +1735,8 @@ body {
   padding: 0px;
   min-width: 60px;
   max-width: 500px;
+
+  align-self: center; /* IE */
 }
 
 .sort-form__label {
@@ -2028,6 +2030,8 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  align-self: center; /* IE */
 }
 
 .pagination__page-item {
