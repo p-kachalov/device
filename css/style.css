@@ -427,7 +427,7 @@ body {
 }
 
 .page-header__main-menu .main-menu__item:last-child {
-  margin-left: 70px;
+  margin-left: 72px;
 }
 
 .main-menu__link {
@@ -557,8 +557,8 @@ body {
   min-height: 500px;
   padding: 0px;
   margin: auto;
-  margin-top: -123px;
-  margin-bottom: 105px;
+  margin-top: -120px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -574,7 +574,7 @@ body {
   align-items: center;
   position: absolute;
   right: 64px;
-  bottom: 149px;
+  bottom: 150px;
   z-index: 10;
 }
 
@@ -610,7 +610,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
 
-  padding-top: 12px; /* pixel perfect */
+  padding-top: 10px; /* pixel perfect */
+  padding-left: 2px;
 }
 
 .popular-products__info-wrapper {
@@ -634,7 +635,7 @@ body {
   letter-spacing: 0.01em;
   text-align: right;
   margin: 0px;
-  margin-right: 45px; /* pixel perfect */
+  margin-right: 47px; /* pixel perfect */
   padding: 0px;
 }
 
@@ -645,7 +646,7 @@ body {
   width: 100px;
   height: 10px;
   border-bottom: 8px solid #ffffff;
-  top: 40px;
+  top: 35px;
   left: 0px;
 }
 
@@ -657,7 +658,7 @@ body {
   color: #000000;
   letter-spacing: 0.01em;
   margin: 0px;
-  margin-top: -80px;
+  margin-top: -83px;
   margin-bottom: 20px;
   padding: 0px;
 }
@@ -680,7 +681,7 @@ body {
   color: #464646;
   letter-spacing: 0.01em;
   margin: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   padding: 0px;
 
   width: 485px;
@@ -728,7 +729,7 @@ body {
 
 .popular-products__link {
   width: 220px;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 }
 
 /* slider actions */
@@ -787,7 +788,7 @@ body {
 .popular-categories {
   margin: 0px auto;
   margin-bottom: 185px;
-  padding: 0px 20px;
+  padding: 0px 15px;
   width: 1160px;
 }
 
@@ -890,7 +891,7 @@ body {
   background-color: #e5e5e5;
   min-height: 290px;
   width: 100%;
-  margin-bottom: 65px;
+  margin-bottom: 90px;
 }
 
 .services__content-wrapper {
@@ -907,15 +908,15 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  top: -102px;
+  top: -100px;
 }
 
 .services__services-navigation {
   width: 277px;
   border-right: 7px solid #000000;
   padding-top: 80px;
-  padding-bottom: 40px;
-  margin-bottom: -40px;
+  padding-bottom: 44px;
+  margin-bottom: -44px;
 }
 
 .services__navigation-button {
@@ -926,7 +927,7 @@ body {
 
 .services__item {
   width: 760px;
-  margin-left: 120px;
+  margin-left: 115px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1042,7 +1043,7 @@ body {
 .makers {
   width: 1160px;
   margin: 0px auto;
-  margin-bottom: 74px;
+  margin-bottom: 75px;
 }
 
 .makers-list {
