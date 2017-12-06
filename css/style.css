@@ -816,6 +816,11 @@ body {
   position: relative;
 }
 
+.wrap-br-design {
+  display: block;
+  width: 125px;
+}
+
 .categories__link::before {
   content: "";
   display: block;
