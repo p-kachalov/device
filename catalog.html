@@ -75,8 +75,45 @@
       <li class="breadcrumbs__item"><a class="breadcrumbs__link">Моноподы для селфи</a></li>
     </ul>
   </div>
-  <div class="catalog-content-wrapper">
 
+  <div class="sort-wrapper">
+    <section class="sort">
+      <h2 class="control-title">Сортировка:</h2>
+      <form class="sort-form">
+        <fieldset class="sort-form__form-group">
+          <legend class="sort-form__form-group-title visually-hidden">Поле сортировки</legend>
+          <input type="radio" id="sort-by-cost" name="sort-by" value="cost" checked
+                 class="sort-form__input-radio visually-hidden">
+          <label for="sort-by-cost" class="sort-form__label">По цене</label>
+
+          <input type="radio" id="sort-by-type" name="sort-by" value="type"
+                 class="sort-form__input-radio visually-hidden">
+          <label for="sort-by-type" class="sort-form__label">По типу</label>
+
+          <input type="radio" id="sort-by-popularity" name="sort-by" value="popularity"
+                 class="sort-form__input-radio visually-hidden">
+          <label for="sort-by-popularity" class="sort-form__label">По популярности</label>
+        </fieldset>
+
+        <fieldset class="sort-form__form-group sort-form__form-group_direction">
+          <legend class="sort-form__form-group-title visually-hidden">Направление сортировки</legend>
+          <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending"
+                 class="sort-form__input-radio visually-hidden">
+          <label for="sort-by-ascending" class="sort-form__label sort-form__label_ascending">
+            <span class="visually-hidden">По возрастанию</span>
+          </label>
+
+          <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked
+                 class="sort-form__input-radio visually-hidden">
+          <label for="sort-by-descending" class="sort-form__label sort-form__label_descending">
+            <span class="visually-hidden">По убыванию</span>
+          </label>
+        </fieldset>
+      </form>
+    </section>
+  </div>
+
+  <div class="filter-and-catalog-wrapper">
     <div class="filters-wrapper">
       <aside class="filters">
         <h2 class="control-title">Фильтр:</h2>
@@ -157,44 +194,7 @@
       </aside>
     </div>
 
-    <div class="sort-and-catalog">
-      <section class="sort">
-        <div class="sort-wrapper">
-        <h2 class="control-title">Сортировка:</h2>
-        <form class="sort-form">
-            <fieldset class="sort-form__form-group">
-              <legend class="sort-form__form-group-title visually-hidden">Поле сортировки</legend>
-              <input type="radio" id="sort-by-cost" name="sort-by" value="cost" checked
-                     class="sort-form__input-radio visually-hidden">
-              <label for="sort-by-cost" class="sort-form__label">По цене</label>
-
-              <input type="radio" id="sort-by-type" name="sort-by" value="type"
-                     class="sort-form__input-radio visually-hidden">
-              <label for="sort-by-type" class="sort-form__label">По типу</label>
-
-              <input type="radio" id="sort-by-popularity" name="sort-by" value="popularity"
-                     class="sort-form__input-radio visually-hidden">
-              <label for="sort-by-popularity" class="sort-form__label">По популярности</label>
-            </fieldset>
-
-            <fieldset class="sort-form__form-group sort-form__form-group_direction">
-              <legend class="sort-form__form-group-title visually-hidden">Направление сортировки</legend>
-              <input type="radio" id="sort-by-ascending" name="sort-direction" value="ascending"
-                     class="sort-form__input-radio visually-hidden">
-              <label for="sort-by-ascending" class="sort-form__label sort-form__label_ascending">
-                <span class="visually-hidden">По возрастанию</span>
-              </label>
-
-              <input type="radio" id="sort-by-descending" name="sort-direction" value="descending" checked
-                     class="sort-form__input-radio visually-hidden">
-              <label for="sort-by-descending" class="sort-form__label sort-form__label_descending">
-                <span class="visually-hidden">По убыванию</span>
-              </label>
-            </fieldset>
-          </form>
-      </div>
-      </section>
-
+    <div class="catalog-wrapper">
       <section class="catalog-view">
 
         <h2 class="section-title visually-hidden">Каталог товаров</h2>
@@ -287,7 +287,6 @@
 
       </section>
     </div>
-
   </div>
 </main>
 
