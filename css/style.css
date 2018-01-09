@@ -1210,6 +1210,7 @@ body {
   background-color: #464646;
 
   width: 100%;
+  min-width: 1200px;
   margin-top: 0px;
 }
 
@@ -1499,6 +1500,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  min-width: 1200px;
   margin-top: -70px;
 }
 
