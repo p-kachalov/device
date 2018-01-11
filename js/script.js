@@ -46,27 +46,30 @@ window.addEventListener("keydown", function (evt) {
 /* dirty hack for IE grayscale */
 (function () {
 
-  function makeColor (event) {
-    var item = event.target;
+  function makeColor (item) {
     if (item.src.substr(item.src.length - 9) === "-gray.png") {
       item.src = item.src.substr(0, item.src.length - 9) + ".png";
     }
   }
 
-  function makeGray (event) {
-    var item = event.target;
+  function makeGray (item) {
     item.src = item.src.substr(0, item.src.length - 4) + "-gray.png";
   }
 
+  function logoMouseOver (event) {
+    makeColor(event.target);
+  }
+
+  function logoMouseOut (event) {
+    makeGray(event.target);
+  }
 
   if (getInternetExplorerVersion() >= 10) {
     var logos = document.querySelectorAll(".makers-list__image");
     for (var i = 0; i < logos.length; i++) {
       var item = logos[i];
-
-      item.addEventListener("mouseover", makeColor);
-      item.addEventListener("mouseout", makeGray);
-
+      item.addEventListener("mouseover", logoMouseOver);
+      item.addEventListener("mouseout", logoMouseOut);
       makeGray(item);
     }
   }
