@@ -24,13 +24,11 @@ openMap.addEventListener("click", function (evt) {
 
 closeFeedback.addEventListener("click", function (evt) {
   evt.preventDefault();
-  console.log("close event");
   feedbackWindow.classList.remove("popup-show");
 });
 
 closeMap.addEventListener("click", function (evt) {
   evt.preventDefault();
-  console.log("close event");
   mapWindow.classList.remove("popup-show");
 });
 
@@ -77,13 +75,13 @@ window.addEventListener("keydown", function (evt) {
     var rv = -1;
     var re = -1;
     var ua = navigator.userAgent;
-    if (navigator.appName == 'Microsoft Internet Explorer') {
-      re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+    if (navigator.appName == "Microsoft Internet Explorer") {
+      re = new RegExp("MSIE ([0-9]{1,}[.0-9]{0,})");
       if (re.exec(ua) != null)
         rv = parseFloat(RegExp.$1);
     }
-    else if (navigator.appName == 'Netscape') {
-      re = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+    else if (navigator.appName == "Netscape") {
+      re = new RegExp("Trident/.*rv:([0-9]{1,}[.0-9]{0,})");
       if (re.exec(ua) != null)
         rv = parseFloat(RegExp.$1);
     }
