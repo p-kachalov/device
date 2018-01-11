@@ -1,9 +1,11 @@
 /* global require */
-var gulp = require("gulp");
-var rename = require("gulp-rename");
-var cleanCSS = require("gulp-clean-css");
-var uglify = require("gulp-uglify");
-var eslint = require("gulp-eslint");
+var gulp = require("gulp"),
+  rename = require("gulp-rename"),
+  cleanCSS = require("gulp-clean-css"),
+  uglify = require("gulp-uglify"),
+  eslint = require("gulp-eslint"),
+  watch = require("gulp-watch");
+
 
 gulp.task("minify-css", function () {
   return gulp.src("./css/style.css")
@@ -24,6 +26,16 @@ gulp.task("lint", function() {
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
+});
+
+gulp.task("watch", function () {
+  watch("./css/style.css", function () {
+    gulp.start("minify-css");
+  });
+
+  watch("./js/script.js", function () {
+    gulp.start("uglify");
+  });
 });
 
 gulp.task("default", ["lint"], function () {
