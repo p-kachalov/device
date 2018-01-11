@@ -1,0 +1,19 @@
+{
+  "name": "device",
+  "version": "1.0.0",
+  "description": "study project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p-kachalov/device.git"
+  },
+  "author": "Pavel-K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p-kachalov/device/issues"
+  },
+  "homepage": "https://github.com/p-kachalov/device#readme"
+}
