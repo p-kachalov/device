@@ -1488,6 +1488,7 @@ body {
 .sort-wrapper {
   background-color: rgba(0, 0, 0, 0.08);
   width: 100%;
+  min-width: 1200px;
   display: flex;
   justify-content: center;
 }
