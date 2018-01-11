@@ -114,18 +114,22 @@ body {
 /* header and footer */
 
 .page-header {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.page-header__wrapper {
   color: #000000;
   background-color: rgba(240, 197, 46, 0.5);
-
   width: 1160px;
   margin: 0 auto;
 }
 
-.page-header_front {
+.page-header__wrapper_front {
   min-height: 300px;
 }
 
-.page-header_inner {
+.page-header__wrapper_inner {
   min-height: 185px;
   margin-bottom: 35px;
 }
