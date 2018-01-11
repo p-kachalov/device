@@ -4,7 +4,8 @@
   "description": "study project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleancss": "cleancss -o css/normalize.min.css css/normalize.css; cleancss -o css/style.min.css css/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/p-kachalov/device/issues"
   },
-  "homepage": "https://github.com/p-kachalov/device#readme"
+  "homepage": "https://github.com/p-kachalov/device#readme",
+  "devDependencies": {
+    "clean-css": "^4.1.9",
+    "clean-css-cli": "^4.1.10"
+  }
 }
