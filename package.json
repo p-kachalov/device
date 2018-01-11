@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cleancss": "cleancss -o css/normalize.min.css css/normalize.css; cleancss -o css/style.min.css css/style.css"
+    "cleancss": "cleancss -o css/normalize.min.css css/normalize.css; cleancss -o css/style.min.css css/style.css",
+    "uglifyjs": "uglifyjs -o js/script.min.js js/script.js;"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "devDependencies": {
     "clean-css": "^4.1.9",
     "clean-css-cli": "^4.1.10"
+  },
+  "dependencies": {
+    "uglify-js": "^3.3.5"
   }
 }
