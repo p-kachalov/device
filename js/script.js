@@ -1,44 +1,45 @@
-var openFeedback = document.querySelector(".contact__link");
-var openMap = document.querySelector(".contact__map-link");
+var openFeedback = document.querySelector('.contact__link');
+var openMap = document.querySelector('.contact__map-link');
 
-var feedbackWindow = document.querySelector(".popup_feedback");
-var closeFeedback = document.querySelector(".popup__close-button_feedback");
-var mapWindow = document.querySelector(".popup_map");
-var closeMap = document.querySelector(".popup__close-button_map");
+var feedbackWindow = document.querySelector('.popup_feedback');
+var closeFeedback = document.querySelector('.popup__close-button_feedback');
+var mapWindow = document.querySelector('.popup_map');
+var closeMap = document.querySelector('.popup__close-button_map');
 
-openFeedback.addEventListener("click", function (evt) {
+
+openFeedback.addEventListener('click', function (evt) {
   evt.preventDefault();
-  feedbackWindow.classList.add("popup-show");
-  if (mapWindow.classList.contains("popup-show")) {
-    mapWindow.classList.remove("popup-show");
+  feedbackWindow.classList.add('popup-show');
+  if (mapWindow.classList.contains('popup-show')) {
+    mapWindow.classList.remove('popup-show');
   }
 });
 
-openMap.addEventListener("click", function (evt) {
+openMap.addEventListener('click', function (evt) {
   evt.preventDefault();
-  mapWindow.classList.add("popup-show");
-  if (feedbackWindow.classList.contains("popup-show")) {
-    feedbackWindow.classList.remove("popup-show");
+  mapWindow.classList.add('popup-show');
+  if (feedbackWindow.classList.contains('popup-show')) {
+    feedbackWindow.classList.remove('popup-show');
   }
 });
 
-closeFeedback.addEventListener("click", function (evt) {
+closeFeedback.addEventListener('click', function (evt) {
   evt.preventDefault();
-  feedbackWindow.classList.remove("popup-show");
+  feedbackWindow.classList.remove('popup-show');
 });
 
-closeMap.addEventListener("click", function (evt) {
+closeMap.addEventListener('click', function (evt) {
   evt.preventDefault();
-  mapWindow.classList.remove("popup-show");
+  mapWindow.classList.remove('popup-show');
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (feedbackWindow.classList.contains("popup-show")) {
-      feedbackWindow.classList.remove("popup-show");
+    if (feedbackWindow.classList.contains('popup-show')) {
+      feedbackWindow.classList.remove('popup-show');
     }
-    if (mapWindow.classList.contains("popup-show")) {
-      mapWindow.classList.remove("popup-show");
+    if (mapWindow.classList.contains('popup-show')) {
+      mapWindow.classList.remove('popup-show');
     }
   }
 });
@@ -47,13 +48,13 @@ window.addEventListener("keydown", function (evt) {
 (function () {
 
   function makeColor (item) {
-    if (item.src.substr(item.src.length - 9) === "-gray.png") {
-      item.src = item.src.substr(0, item.src.length - 9) + ".png";
+    if (item.src.substr(item.src.length - 9) === '-gray.png') {
+      item.src = item.src.substr(0, item.src.length - 9) + '.png';
     }
   }
 
   function makeGray (item) {
-    item.src = item.src.substr(0, item.src.length - 4) + "-gray.png";
+    item.src = item.src.substr(0, item.src.length - 4) + '-gray.png';
   }
 
   function logoMouseOver (event) {
@@ -65,11 +66,11 @@ window.addEventListener("keydown", function (evt) {
   }
 
   if (getInternetExplorerVersion() >= 10) {
-    var logos = document.querySelectorAll(".makers-list__image");
+    var logos = document.querySelectorAll('.makers-list__image');
     for (var i = 0; i < logos.length; i++) {
       var item = logos[i];
-      item.addEventListener("mouseover", logoMouseOver);
-      item.addEventListener("mouseout", logoMouseOut);
+      item.addEventListener('mouseover', logoMouseOver);
+      item.addEventListener('mouseout', logoMouseOut);
       makeGray(item);
     }
   }
@@ -78,13 +79,13 @@ window.addEventListener("keydown", function (evt) {
     var rv = -1;
     var re = -1;
     var ua = navigator.userAgent;
-    if (navigator.appName == "Microsoft Internet Explorer") {
-      re = new RegExp("MSIE ([0-9]{1,}[.0-9]{0,})");
+    if (navigator.appName == 'Microsoft Internet Explorer') {
+      re = new RegExp('MSIE ([0-9]{1,}[.0-9]{0,})');
       if (re.exec(ua) != null)
         rv = parseFloat(RegExp.$1);
     }
-    else if (navigator.appName == "Netscape") {
-      re = new RegExp("Trident/.*rv:([0-9]{1,}[.0-9]{0,})");
+    else if (navigator.appName == 'Netscape') {
+      re = new RegExp('Trident/.*rv:([0-9]{1,}[.0-9]{0,})');
       if (re.exec(ua) != null)
         rv = parseFloat(RegExp.$1);
     }
